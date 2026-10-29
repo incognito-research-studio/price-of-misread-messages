@@ -45,14 +45,14 @@ flowchart LR
 Because each reading error is one recorded delta, total regret splits into the cost of
 misreading and the cost of letting a model decide (Section 3.2 of the paper):
 
-$$
+```math
 \underbrace{C(x^\pi(\hat s)) - C(x^\star)}_{R_\text{total}}
 = \underbrace{C(x^\pi(\hat s)) - C(x^\pi(s^\star))}_{R_\text{interp}}
 + \underbrace{C(x^\pi(s^\star)) - C(x^\star)}_{R_\text{dec}}
-$$
+```
 
-where $\hat s$ is the state as the reader read it, $s^\star$ the true state, $x^\pi$ the
-planner's orders and $x^\star$ the benchmark policy. Each error is then priced by repairing it in
+where $`\hat s`$ is the state as the reader read it, $`s^\star`$ the true state, $`x^\pi`$ the
+planner's orders and $`x^\star`$ the benchmark policy. Each error is then priced by repairing it in
 the recorded output and replaying the decision (single repairs and sampled Shapley values,
 Section 3.4). [docs/architecture.md](docs/architecture.md) and
 [docs/evaluation.md](docs/evaluation.md) describe each layer and the metrics.
@@ -184,8 +184,8 @@ Each run folder holds:
 | --- | --- |
 | `results.jsonl` | one row per stream and condition: cost, regret parts, precision, recall and F1, violations, audit completeness |
 | `summary.csv` | per-condition means |
-| `errors.jsonl`, `errors.csv` | every delta error with its kind, type, single-repair effect $\Delta C_j$ and, where computed, Shapley value |
-| `sensitivity.csv` | error counts and summed $\Delta C_j$ by delta type and error kind |
+| `errors.jsonl`, `errors.csv` | every delta error with its kind, type, single-repair effect $`\Delta C_j`$ and, where computed, Shapley value |
+| `sensitivity.csv` | error counts and summed $`\Delta C_j`$ by delta type and error kind |
 | `requests-<model>.jsonl` | every model request and reply, tagged with stream and condition |
 | `proposals.jsonl` | each reader's completed deltas, parse failures and SOP verdicts, for replay without the model (export runs) |
 | `config.json`, `models.json` | the resolved configuration; model names, digests, server version and decoding settings |
@@ -272,8 +272,8 @@ The code predates some of the paper's wording, and configs and frozen files were
 | planner, planning model | solver (`cdd.solver`, `solver:` in configs) |
 | typed change | delta |
 | deterministic checks | L4 span parser and L2 SOP layer |
-| cost of misreading, $R_\text{interp}$ | interpretation regret |
-| cost of letting a model decide, $R_\text{dec}$ | decision regret |
+| cost of misreading, $`R_\text{interp}`$ | interpretation regret |
+| cost of letting a model decide, $`R_\text{dec}`$ | decision regret |
 | compiling (keeping reading apart from deciding) | the package name `cdd` |
 | fixed before any evaluation run | "pre-registered" in comments |
 | order promising | `cdd.promising`, `promising-*` configs |

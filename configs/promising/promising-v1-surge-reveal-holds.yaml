@@ -1,0 +1,17 @@
+# Sensitivity of promising-v1-surge (scope 5.8, D10, predetermined): a held lot that blocks a due
+# commitment is revealed to the policy from the next week. Otherwise identical to
+# promising-v1-surge.yaml. Losses only; not a main setting.
+margin_fraction: 0.5
+lateness_fraction: 0.2
+broken_fraction: 0.5
+terminal_fraction: 0.5
+
+demand_scale: 1.3
+orders_per_week: 3
+dirichlet_alpha: 1.0
+customer_lead_weeks: [1, 2, 3]
+first_requested_offset: 3
+
+max_late_weeks: 2
+time_limit: 10
+reveal_holds: true

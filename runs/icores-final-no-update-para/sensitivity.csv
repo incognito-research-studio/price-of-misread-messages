@@ -1,0 +1,8 @@
+condition,delta_type,kind,count,sum_delta_c
+no-update,supplier_status,missed,19,219040.12412813908
+no-update,quality_hold,missed,26,130854.63500990561
+no-update,capacity_change,missed,56,7881.080929724587
+no-update,lead_time_change,missed,43,7578.897240635488
+no-update,quality_release,missed,15,0.0
+no-update,demand_signal,missed,51,-2981.3098005374995
+no-update,price_change,missed,28,-8871.418373698769

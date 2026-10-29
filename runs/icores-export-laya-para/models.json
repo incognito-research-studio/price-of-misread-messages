@@ -1,0 +1,10 @@
+[
+  {
+    "name": "laya:convaiinnovations/laya/typed-decisions",
+    "client": "laya",
+    "model": "convaiinnovations/laya",
+    "subfolder": "typed-decisions",
+    "revision": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+    "laya_version": "0.4.1"
+  }
+]

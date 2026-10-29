@@ -1,0 +1,30 @@
+# The model-free conditions only (oracle and regex), with the settings of local-readers.yaml.
+# Used for the regex confirmation on the dev split:
+#   cdd -v run --config configs/experiments/local-baselines.yaml --streams data/v2/dev-para
+name: local-baselines
+streams: data/v2/dev-para
+output_dir: runs
+seed: 0
+demand_cv: 0.2
+sop: configs/sop/sop-v2.yaml
+approver: magnitude_cap
+approver_cap: 0.5
+hindsight_time_limit: 60
+benchmark: planner
+tuned_safety_factors: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5]
+
+solver:
+  horizon: 6
+  time_limit: 10
+  safety_factor: 0.3     # pre-registered 2026-10-23 (see local-readers.yaml)
+
+attribution:
+  single_repair: true
+  shapley_permutations: 0
+
+conditions:
+  - name: oracle
+    interpreter: oracle
+
+  - name: regex
+    interpreter: regex

@@ -1,0 +1,380 @@
+{
+  "streams": [
+    {
+      "id": "pilot-000",
+      "messages": 20,
+      "sha256": "b91dc070be411ad9e298c0f4e2a569006b296d74d780694c55cc97db84d01eb3"
+    },
+    {
+      "id": "pilot-015",
+      "messages": 15,
+      "sha256": "909ae629ee7a31a2a26ba0cdc6d5540241511a4b1b77c011fe67f41268bee70a"
+    },
+    {
+      "id": "pilot-021",
+      "messages": 16,
+      "sha256": "29a34b10bc31d7e15b72a5c0094745837d8b21a4ea6881baa9ebe30a22564869"
+    },
+    {
+      "id": "pilot-022",
+      "messages": 8,
+      "sha256": "424c3376f299f9f5fc406f8ff46beb6d72054ed561ab356bb743cd469e39c0b2"
+    }
+  ],
+  "messages": [
+    {
+      "id": "pilot-000-m0000",
+      "stream": "pilot-000",
+      "changes": 1,
+      "feature": "write the date as a calendar date (e.g. 'from 5 October') instead of a week number"
+    },
+    {
+      "id": "pilot-000-m0001",
+      "stream": "pilot-000",
+      "changes": 1,
+      "feature": "add an irrelevant number (an order count, a phone extension, a reference number)"
+    },
+    {
+      "id": "pilot-000-m0002",
+      "stream": "pilot-000",
+      "changes": 1,
+      "feature": "unfamiliar structure: put the change at the end of a longer sentence, or use passive voice"
+    },
+    {
+      "id": "pilot-000-m0003",
+      "stream": "pilot-000",
+      "changes": 1,
+      "feature": "negation: also say what is NOT changing (another site, lane or product, by name)"
+    },
+    {
+      "id": "pilot-000-m0004",
+      "stream": "pilot-000",
+      "changes": 1,
+      "feature": "informal or abbreviated wording, as in a quick chat message"
+    },
+    {
+      "id": "pilot-000-m0005",
+      "stream": "pilot-000",
+      "changes": 0,
+      "feature": "mention a named site, lane, lot or product and a number, but change nothing"
+    },
+    {
+      "id": "pilot-000-m0006",
+      "stream": "pilot-000",
+      "changes": 1,
+      "feature": "write the date as a calendar date (e.g. 'from 5 October') instead of a week number"
+    },
+    {
+      "id": "pilot-000-m0007",
+      "stream": "pilot-000",
+      "changes": 0,
+      "feature": "use a change word in a negated or routine sense (e.g. 'no delay expected at Port X', 'order plan unchanged') and change nothing"
+    },
+    {
+      "id": "pilot-000-m0008",
+      "stream": "pilot-000",
+      "changes": 1,
+      "feature": "add an irrelevant number (an order count, a phone extension, a reference number)"
+    },
+    {
+      "id": "pilot-000-m0009",
+      "stream": "pilot-000",
+      "changes": 1,
+      "feature": "unfamiliar structure: put the change at the end of a longer sentence, or use passive voice"
+    },
+    {
+      "id": "pilot-000-m0010",
+      "stream": "pilot-000",
+      "changes": 1,
+      "feature": "cancellation wording: say the earlier restriction is lifted, withdrawn or ended"
+    },
+    {
+      "id": "pilot-000-m0011",
+      "stream": "pilot-000",
+      "changes": 1,
+      "feature": "negation: also say what is NOT changing (another site, lane or product, by name)"
+    },
+    {
+      "id": "pilot-000-m0012",
+      "stream": "pilot-000",
+      "changes": 0,
+      "feature": "mention a named site, lane, lot or product and a number, but change nothing"
+    },
+    {
+      "id": "pilot-000-m0013",
+      "stream": "pilot-000",
+      "changes": 1,
+      "feature": "informal or abbreviated wording, as in a quick chat message"
+    },
+    {
+      "id": "pilot-000-m0014",
+      "stream": "pilot-000",
+      "changes": 1,
+      "feature": "write the date as a calendar date (e.g. 'from 5 October') instead of a week number"
+    },
+    {
+      "id": "pilot-000-m0015",
+      "stream": "pilot-000",
+      "changes": 0,
+      "feature": "use a change word in a negated or routine sense (e.g. 'no delay expected at Port X', 'order plan unchanged') and change nothing"
+    },
+    {
+      "id": "pilot-000-m0016",
+      "stream": "pilot-000",
+      "changes": 1,
+      "feature": "add an irrelevant number (an order count, a phone extension, a reference number)"
+    },
+    {
+      "id": "pilot-000-m0017",
+      "stream": "pilot-000",
+      "changes": 1,
+      "feature": "unfamiliar structure: put the change at the end of a longer sentence, or use passive voice"
+    },
+    {
+      "id": "pilot-000-m0018",
+      "stream": "pilot-000",
+      "changes": 1,
+      "feature": "negation: also say what is NOT changing (another site, lane or product, by name)"
+    },
+    {
+      "id": "pilot-000-m0019",
+      "stream": "pilot-000",
+      "changes": 1,
+      "feature": "cancellation wording: say the earlier restriction is lifted, withdrawn or ended"
+    },
+    {
+      "id": "pilot-015-m0000",
+      "stream": "pilot-015",
+      "changes": 1,
+      "feature": "informal or abbreviated wording, as in a quick chat message"
+    },
+    {
+      "id": "pilot-015-m0001",
+      "stream": "pilot-015",
+      "changes": 1,
+      "feature": "write the date as a calendar date (e.g. 'from 5 October') instead of a week number"
+    },
+    {
+      "id": "pilot-015-m0002",
+      "stream": "pilot-015",
+      "changes": 1,
+      "feature": "add an irrelevant number (an order count, a phone extension, a reference number)"
+    },
+    {
+      "id": "pilot-015-m0003",
+      "stream": "pilot-015",
+      "changes": 1,
+      "feature": "correction: say that this corrects or replaces the earlier notice"
+    },
+    {
+      "id": "pilot-015-m0004",
+      "stream": "pilot-015",
+      "changes": 1,
+      "feature": "unfamiliar structure: put the change at the end of a longer sentence, or use passive voice"
+    },
+    {
+      "id": "pilot-015-m0005",
+      "stream": "pilot-015",
+      "changes": 0,
+      "feature": "mention a named site, lane, lot or product and a number, but change nothing"
+    },
+    {
+      "id": "pilot-015-m0006",
+      "stream": "pilot-015",
+      "changes": 1,
+      "feature": "negation: also say what is NOT changing (another site, lane or product, by name)"
+    },
+    {
+      "id": "pilot-015-m0007",
+      "stream": "pilot-015",
+      "changes": 0,
+      "feature": "use a change word in a negated or routine sense (e.g. 'no delay expected at Port X', 'order plan unchanged') and change nothing"
+    },
+    {
+      "id": "pilot-015-m0008",
+      "stream": "pilot-015",
+      "changes": 1,
+      "feature": "informal or abbreviated wording, as in a quick chat message"
+    },
+    {
+      "id": "pilot-015-m0009",
+      "stream": "pilot-015",
+      "changes": 1,
+      "feature": "write the date as a calendar date (e.g. 'from 5 October') instead of a week number"
+    },
+    {
+      "id": "pilot-015-m0010",
+      "stream": "pilot-015",
+      "changes": 0,
+      "feature": "mention a named site, lane, lot or product and a number, but change nothing"
+    },
+    {
+      "id": "pilot-015-m0011",
+      "stream": "pilot-015",
+      "changes": 1,
+      "feature": "add an irrelevant number (an order count, a phone extension, a reference number)"
+    },
+    {
+      "id": "pilot-015-m0012",
+      "stream": "pilot-015",
+      "changes": 0,
+      "feature": "use a change word in a negated or routine sense (e.g. 'no delay expected at Port X', 'order plan unchanged') and change nothing"
+    },
+    {
+      "id": "pilot-015-m0013",
+      "stream": "pilot-015",
+      "changes": 1,
+      "feature": "unfamiliar structure: put the change at the end of a longer sentence, or use passive voice"
+    },
+    {
+      "id": "pilot-015-m0014",
+      "stream": "pilot-015",
+      "changes": 0,
+      "feature": "mention a named site, lane, lot or product and a number, but change nothing"
+    },
+    {
+      "id": "pilot-021-m0000",
+      "stream": "pilot-021",
+      "changes": 1,
+      "feature": "negation: also say what is NOT changing (another site, lane or product, by name)"
+    },
+    {
+      "id": "pilot-021-m0001",
+      "stream": "pilot-021",
+      "changes": 1,
+      "feature": "informal or abbreviated wording, as in a quick chat message"
+    },
+    {
+      "id": "pilot-021-m0002",
+      "stream": "pilot-021",
+      "changes": 1,
+      "feature": "write the date as a calendar date (e.g. 'from 5 October') instead of a week number"
+    },
+    {
+      "id": "pilot-021-m0003",
+      "stream": "pilot-021",
+      "changes": 1,
+      "feature": "add an irrelevant number (an order count, a phone extension, a reference number)"
+    },
+    {
+      "id": "pilot-021-m0004",
+      "stream": "pilot-021",
+      "changes": 1,
+      "feature": "unfamiliar structure: put the change at the end of a longer sentence, or use passive voice"
+    },
+    {
+      "id": "pilot-021-m0005",
+      "stream": "pilot-021",
+      "changes": 1,
+      "feature": "negation: also say what is NOT changing (another site, lane or product, by name)"
+    },
+    {
+      "id": "pilot-021-m0006",
+      "stream": "pilot-021",
+      "changes": 0,
+      "feature": "use a change word in a negated or routine sense (e.g. 'no delay expected at Port X', 'order plan unchanged') and change nothing"
+    },
+    {
+      "id": "pilot-021-m0007",
+      "stream": "pilot-021",
+      "changes": 1,
+      "feature": "informal or abbreviated wording, as in a quick chat message"
+    },
+    {
+      "id": "pilot-021-m0008",
+      "stream": "pilot-021",
+      "changes": 1,
+      "feature": "write the date as a calendar date (e.g. 'from 5 October') instead of a week number"
+    },
+    {
+      "id": "pilot-021-m0009",
+      "stream": "pilot-021",
+      "changes": 1,
+      "feature": "cancellation wording: say the earlier restriction is lifted, withdrawn or ended"
+    },
+    {
+      "id": "pilot-021-m0010",
+      "stream": "pilot-021",
+      "changes": 1,
+      "feature": "add an irrelevant number (an order count, a phone extension, a reference number)"
+    },
+    {
+      "id": "pilot-021-m0011",
+      "stream": "pilot-021",
+      "changes": 1,
+      "feature": "unfamiliar structure: put the change at the end of a longer sentence, or use passive voice"
+    },
+    {
+      "id": "pilot-021-m0012",
+      "stream": "pilot-021",
+      "changes": 0,
+      "feature": "mention a named site, lane, lot or product and a number, but change nothing"
+    },
+    {
+      "id": "pilot-021-m0013",
+      "stream": "pilot-021",
+      "changes": 1,
+      "feature": "negation: also say what is NOT changing (another site, lane or product, by name)"
+    },
+    {
+      "id": "pilot-021-m0014",
+      "stream": "pilot-021",
+      "changes": 1,
+      "feature": "informal or abbreviated wording, as in a quick chat message"
+    },
+    {
+      "id": "pilot-021-m0015",
+      "stream": "pilot-021",
+      "changes": 1,
+      "feature": "cancellation wording: say the earlier restriction is lifted, withdrawn or ended"
+    },
+    {
+      "id": "pilot-022-m0000",
+      "stream": "pilot-022",
+      "changes": 1,
+      "feature": "write the date as a calendar date (e.g. 'from 5 October') instead of a week number"
+    },
+    {
+      "id": "pilot-022-m0001",
+      "stream": "pilot-022",
+      "changes": 0,
+      "feature": "use a change word in a negated or routine sense (e.g. 'no delay expected at Port X', 'order plan unchanged') and change nothing"
+    },
+    {
+      "id": "pilot-022-m0002",
+      "stream": "pilot-022",
+      "changes": 0,
+      "feature": "mention a named site, lane, lot or product and a number, but change nothing"
+    },
+    {
+      "id": "pilot-022-m0003",
+      "stream": "pilot-022",
+      "changes": 0,
+      "feature": "use a change word in a negated or routine sense (e.g. 'no delay expected at Port X', 'order plan unchanged') and change nothing"
+    },
+    {
+      "id": "pilot-022-m0004",
+      "stream": "pilot-022",
+      "changes": 1,
+      "feature": "add an irrelevant number (an order count, a phone extension, a reference number)"
+    },
+    {
+      "id": "pilot-022-m0005",
+      "stream": "pilot-022",
+      "changes": 1,
+      "feature": "unfamiliar structure: put the change at the end of a longer sentence, or use passive voice"
+    },
+    {
+      "id": "pilot-022-m0006",
+      "stream": "pilot-022",
+      "changes": 1,
+      "feature": "negation: also say what is NOT changing (another site, lane or product, by name)"
+    },
+    {
+      "id": "pilot-022-m0007",
+      "stream": "pilot-022",
+      "changes": 1,
+      "feature": "cancellation wording: say the earlier restriction is lifted, withdrawn or ended"
+    }
+  ]
+}

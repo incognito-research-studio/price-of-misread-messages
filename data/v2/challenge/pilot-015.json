@@ -1,0 +1,653 @@
+{
+  "id": "pilot-015",
+  "seed": 246470311,
+  "world": {
+    "start_period": 36,
+    "end_period": 52,
+    "calendar_year": 2026,
+    "days_per_period": 7,
+    "budget_per_period": null,
+    "restricted_capacity_factor": 0.5,
+    "suppliers": [
+      {
+        "id": "SUP-A",
+        "name": "Supplier A",
+        "aliases": [],
+        "status": "active"
+      },
+      {
+        "id": "SUP-B",
+        "name": "Supplier B",
+        "aliases": [],
+        "status": "active"
+      },
+      {
+        "id": "SUP-C",
+        "name": "Supplier C",
+        "aliases": [],
+        "status": "active"
+      }
+    ],
+    "plants": [
+      {
+        "id": "P1",
+        "name": "Plant 1",
+        "aliases": [],
+        "supplier": "SUP-A",
+        "capacity": 73.7,
+        "skus": [
+          "SKU-01",
+          "SKU-02"
+        ]
+      },
+      {
+        "id": "P2",
+        "name": "Plant 2",
+        "aliases": [],
+        "supplier": "SUP-A",
+        "capacity": 73.9,
+        "skus": [
+          "SKU-03",
+          "SKU-04"
+        ]
+      },
+      {
+        "id": "P3",
+        "name": "Plant 3",
+        "aliases": [],
+        "supplier": "SUP-B",
+        "capacity": 65.0,
+        "skus": [
+          "SKU-02",
+          "SKU-04"
+        ]
+      },
+      {
+        "id": "P4",
+        "name": "Plant 4",
+        "aliases": [],
+        "supplier": "SUP-B",
+        "capacity": 53.7,
+        "skus": [
+          "SKU-01",
+          "SKU-04"
+        ]
+      },
+      {
+        "id": "P5",
+        "name": "Plant 5",
+        "aliases": [],
+        "supplier": "SUP-C",
+        "capacity": 75.8,
+        "skus": [
+          "SKU-01",
+          "SKU-03"
+        ]
+      },
+      {
+        "id": "P6",
+        "name": "Plant 6",
+        "aliases": [],
+        "supplier": "SUP-C",
+        "capacity": 83.2,
+        "skus": [
+          "SKU-03",
+          "SKU-04"
+        ]
+      }
+    ],
+    "lanes": [
+      {
+        "id": "LANE-X",
+        "name": "Port X",
+        "aliases": [],
+        "plant": "P1",
+        "lead_time_days": 7.0
+      },
+      {
+        "id": "LANE-Y",
+        "name": "Port Y",
+        "aliases": [],
+        "plant": "P2",
+        "lead_time_days": 11.0
+      },
+      {
+        "id": "LANE-Z",
+        "name": "Port Z",
+        "aliases": [],
+        "plant": "P3",
+        "lead_time_days": 8.0
+      },
+      {
+        "id": "LANE-W",
+        "name": "Port W",
+        "aliases": [],
+        "plant": "P4",
+        "lead_time_days": 14.0
+      },
+      {
+        "id": "LANE-V",
+        "name": "Port V",
+        "aliases": [],
+        "plant": "P5",
+        "lead_time_days": 12.0
+      },
+      {
+        "id": "LANE-U",
+        "name": "Port U",
+        "aliases": [],
+        "plant": "P6",
+        "lead_time_days": 7.0
+      }
+    ],
+    "skus": [
+      {
+        "id": "SKU-01",
+        "name": "SKU-01",
+        "aliases": [],
+        "base_demand": 109.8,
+        "holding_cost": 0.5,
+        "backlog_cost": 25.0,
+        "initial_stock": 329.4
+      },
+      {
+        "id": "SKU-02",
+        "name": "SKU-02",
+        "aliases": [],
+        "base_demand": 78.3,
+        "holding_cost": 0.5,
+        "backlog_cost": 25.0,
+        "initial_stock": 234.9
+      },
+      {
+        "id": "SKU-03",
+        "name": "SKU-03",
+        "aliases": [],
+        "base_demand": 128.3,
+        "holding_cost": 0.5,
+        "backlog_cost": 25.0,
+        "initial_stock": 384.9
+      },
+      {
+        "id": "SKU-04",
+        "name": "SKU-04",
+        "aliases": [],
+        "base_demand": 87.6,
+        "holding_cost": 0.5,
+        "backlog_cost": 25.0,
+        "initial_stock": 262.8
+      }
+    ],
+    "offers": [
+      {
+        "id": "SUP-A/SKU-01",
+        "name": "Supplier A SKU-01",
+        "aliases": [],
+        "supplier": "SUP-A",
+        "sku": "SKU-01",
+        "price": 20.36,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-A/SKU-02",
+        "name": "Supplier A SKU-02",
+        "aliases": [],
+        "supplier": "SUP-A",
+        "sku": "SKU-02",
+        "price": 17.79,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-A/SKU-03",
+        "name": "Supplier A SKU-03",
+        "aliases": [],
+        "supplier": "SUP-A",
+        "sku": "SKU-03",
+        "price": 9.42,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-A/SKU-04",
+        "name": "Supplier A SKU-04",
+        "aliases": [],
+        "supplier": "SUP-A",
+        "sku": "SKU-04",
+        "price": 13.61,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-B/SKU-01",
+        "name": "Supplier B SKU-01",
+        "aliases": [],
+        "supplier": "SUP-B",
+        "sku": "SKU-01",
+        "price": 20.07,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-B/SKU-02",
+        "name": "Supplier B SKU-02",
+        "aliases": [],
+        "supplier": "SUP-B",
+        "sku": "SKU-02",
+        "price": 18.87,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-B/SKU-04",
+        "name": "Supplier B SKU-04",
+        "aliases": [],
+        "supplier": "SUP-B",
+        "sku": "SKU-04",
+        "price": 12.76,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-C/SKU-01",
+        "name": "Supplier C SKU-01",
+        "aliases": [],
+        "supplier": "SUP-C",
+        "sku": "SKU-01",
+        "price": 19.91,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-C/SKU-03",
+        "name": "Supplier C SKU-03",
+        "aliases": [],
+        "supplier": "SUP-C",
+        "sku": "SKU-03",
+        "price": 8.99,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-C/SKU-04",
+        "name": "Supplier C SKU-04",
+        "aliases": [],
+        "supplier": "SUP-C",
+        "sku": "SKU-04",
+        "price": 13.49,
+        "moq": 0.0
+      }
+    ],
+    "lots": [
+      {
+        "id": "LOT-7701",
+        "name": "Lot 7701",
+        "aliases": [],
+        "sku": "SKU-01",
+        "quantity": 253.4,
+        "hold_status": "released",
+        "arrival": 39
+      },
+      {
+        "id": "LOT-7702",
+        "name": "Lot 7702",
+        "aliases": [],
+        "sku": "SKU-02",
+        "quantity": 215.7,
+        "hold_status": "released",
+        "arrival": 42
+      },
+      {
+        "id": "LOT-7703",
+        "name": "Lot 7703",
+        "aliases": [],
+        "sku": "SKU-03",
+        "quantity": 281.6,
+        "hold_status": "released",
+        "arrival": 42
+      },
+      {
+        "id": "LOT-7704",
+        "name": "Lot 7704",
+        "aliases": [],
+        "sku": "SKU-04",
+        "quantity": 179.2,
+        "hold_status": "released",
+        "arrival": 40
+      }
+    ]
+  },
+  "messages": [
+    {
+      "id": "pilot-015-m0000",
+      "period": 36,
+      "sender": "Carrier ops",
+      "sender_class": "carrier",
+      "channel": "carrier",
+      "text": "heads up: Port V lane (ex Plant 5) is running 5 days faster from this wk, new direct service. until further notice. carrier ops"
+    },
+    {
+      "id": "pilot-015-m0001",
+      "period": 37,
+      "sender": "Supplier C planning",
+      "sender_class": "supplier_planning",
+      "channel": "portal",
+      "text": "Supplier C portal update: Plant 5 will have 10% extra capacity available from 14 September to 11 October, thanks to an added weekend shift. Contact Lena in planning with any questions."
+    },
+    {
+      "id": "pilot-015-m0002",
+      "period": 37,
+      "sender": "Supplier B planning",
+      "sender_class": "supplier_planning",
+      "channel": "email",
+      "text": "Hello,\n\nOur ref. MN-3391. Plant 4 will run 20% below normal capacity in weeks 39 and 40 because of planned maintenance on the main kiln. Please call me on ext. 418 if you need to discuss.\n\nRegards,\nKarin Holm, Supplier B Planning"
+    },
+    {
+      "id": "pilot-015-m0003",
+      "period": 38,
+      "sender": "Supplier B planning",
+      "sender_class": "supplier_planning",
+      "channel": "portal",
+      "text": "Correction to our notice of last week (ref. MN-3391): the capacity cut at Plant 4 for weeks 39 and 40 will be 15%, not 20% as we said. This replaces the earlier notice. Karin, Supplier B Planning"
+    },
+    {
+      "id": "pilot-015-m0004",
+      "period": 38,
+      "sender": "Sales ops",
+      "sender_class": "sales",
+      "channel": "email",
+      "text": "Hi all,\n\nBecause one of our larger retail customers is running a one-week in-store promotion, and their buyer confirmed the extra quantities on yesterday's call, customer orders for SKU-03 are expected to be 10% higher in week 39 only.\n\nThanks,\nRaj, Sales Ops"
+    },
+    {
+      "id": "pilot-015-m0005",
+      "period": 38,
+      "sender": "Ops desk",
+      "sender_class": "internal",
+      "channel": "email",
+      "text": "Ops desk, FYI: stock check on Lot 7703 done, 260 units of SKU-03 on hand, same as in the system. No action needed. Lucy"
+    },
+    {
+      "id": "pilot-015-m0006",
+      "period": 39,
+      "sender": "QA",
+      "sender_class": "supplier_quality",
+      "channel": "email",
+      "text": "Dear colleagues,\n\nLot 7703 (SKU-03) has been placed on quality hold from this week until further notice, while we investigate a labelling issue. Stock of SKU-01 and SKU-04 is not affected.\n\nBest regards,\nMark, Quality Assurance"
+    },
+    {
+      "id": "pilot-015-m0007",
+      "period": 39,
+      "sender": "Ops desk",
+      "sender_class": "internal",
+      "channel": "portal",
+      "text": "Weekly ops note: no delay expected at Port X this week. Everything is on plan."
+    },
+    {
+      "id": "pilot-015-m0008",
+      "period": 41,
+      "sender": "Supplier A billing",
+      "sender_class": "supplier_finance",
+      "channel": "email",
+      "text": "Hi! Supplier A billing here. Good news, SKU-04 price goes down 2% from wk 44, until further notice. New invoices will show it. cheers, Tina"
+    },
+    {
+      "id": "pilot-015-m0009",
+      "period": 42,
+      "sender": "Carrier ops",
+      "sender_class": "carrier",
+      "channel": "carrier",
+      "text": "Carrier ops notice: from 19 October, shipments from Plant 1 on the Port X lane will take 10 days longer than usual because of congestion at the port. This will continue until further notice."
+    },
+    {
+      "id": "pilot-015-m0010",
+      "period": 43,
+      "sender": "Ops desk",
+      "sender_class": "internal",
+      "channel": "portal",
+      "text": "Ops desk: 18 pallets of SKU-01 received from Plant 5 this week, all checked in, no discrepancies."
+    },
+    {
+      "id": "pilot-015-m0011",
+      "period": 45,
+      "sender": "Supplier A planning",
+      "sender_class": "supplier_planning",
+      "channel": "email",
+      "text": "Hello,\n\nRe: your order 4500127736. Please note that Plant 2 will run at 10% below normal capacity from week 47 through week 49, due to a staff training programme. You can reach me on ext. 3302 with any questions.\n\nKind regards,\nPaul, Supplier A Planning"
+    },
+    {
+      "id": "pilot-015-m0012",
+      "period": 45,
+      "sender": "Ops desk",
+      "sender_class": "internal",
+      "channel": "portal",
+      "text": "No changes from the ops desk this week. SKU-03 order plan unchanged."
+    },
+    {
+      "id": "pilot-015-m0013",
+      "period": 46,
+      "sender": "Carrier ops",
+      "sender_class": "carrier",
+      "channel": "carrier",
+      "text": "Carrier ops update: owing to a revised routing that now calls at an additional hub port for transhipment, the transit time for shipments from Plant 2 on the Port Y lane will be extended by 5 days from week 47 until further notice."
+    },
+    {
+      "id": "pilot-015-m0014",
+      "period": 46,
+      "sender": "Ops desk",
+      "sender_class": "internal",
+      "channel": "portal",
+      "text": "Cycle count result for SKU-04: 1,140 units, matches the system. Nothing to update in the plan."
+    }
+  ],
+  "gold": [
+    {
+      "id": "pilot-015-m0000#g0",
+      "type": "lead_time_change",
+      "entity": "LANE-V",
+      "attribute": "lead_time",
+      "op": "add",
+      "value": -5.0,
+      "unit": "days",
+      "window": {
+        "start": 36,
+        "end": null
+      },
+      "src": {
+        "message_id": "pilot-015-m0000",
+        "start": 10,
+        "end": 114
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "pilot-015-m0001#g0",
+      "type": "capacity_change",
+      "entity": "P5",
+      "attribute": "capacity",
+      "op": "scale",
+      "value": 1.1,
+      "unit": "ratio",
+      "window": {
+        "start": 38,
+        "end": 41
+      },
+      "src": {
+        "message_id": "pilot-015-m0001",
+        "start": 26,
+        "end": 104
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "pilot-015-m0002#g0",
+      "type": "capacity_change",
+      "entity": "P4",
+      "attribute": "capacity",
+      "op": "scale",
+      "value": 0.8,
+      "unit": "ratio",
+      "window": {
+        "start": 39,
+        "end": 40
+      },
+      "src": {
+        "message_id": "pilot-015-m0002",
+        "start": 26,
+        "end": 87
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "pilot-015-m0003#g0",
+      "type": "capacity_change",
+      "entity": "P4",
+      "attribute": "capacity",
+      "op": "scale",
+      "value": 0.85,
+      "unit": "ratio",
+      "window": {
+        "start": 39,
+        "end": 40
+      },
+      "src": {
+        "message_id": "pilot-015-m0003",
+        "start": 54,
+        "end": 113
+      },
+      "confidence": null,
+      "supersedes": [
+        "pilot-015-m0002#g0"
+      ]
+    },
+    {
+      "id": "pilot-015-m0004#g0",
+      "type": "demand_signal",
+      "entity": "SKU-03",
+      "attribute": "demand",
+      "op": "scale",
+      "value": 1.1,
+      "unit": "ratio",
+      "window": {
+        "start": 39,
+        "end": 39
+      },
+      "src": {
+        "message_id": "pilot-015-m0004",
+        "start": 162,
+        "end": 234
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "pilot-015-m0006#g0",
+      "type": "quality_hold",
+      "entity": "LOT-7703",
+      "attribute": "hold_status",
+      "op": "set",
+      "value": "held",
+      "unit": null,
+      "window": {
+        "start": 39,
+        "end": null
+      },
+      "src": {
+        "message_id": "pilot-015-m0006",
+        "start": 18,
+        "end": 103
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "pilot-015-m0008#g0",
+      "type": "price_change",
+      "entity": "SUP-A/SKU-04",
+      "attribute": "price",
+      "op": "scale",
+      "value": 0.98,
+      "unit": "ratio",
+      "window": {
+        "start": 44,
+        "end": null
+      },
+      "src": {
+        "message_id": "pilot-015-m0008",
+        "start": 40,
+        "end": 98
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "pilot-015-m0009#g0",
+      "type": "lead_time_change",
+      "entity": "LANE-X",
+      "attribute": "lead_time",
+      "op": "add",
+      "value": 10.0,
+      "unit": "days",
+      "window": {
+        "start": 43,
+        "end": null
+      },
+      "src": {
+        "message_id": "pilot-015-m0009",
+        "start": 20,
+        "end": 189
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "pilot-015-m0011#g0",
+      "type": "capacity_change",
+      "entity": "P2",
+      "attribute": "capacity",
+      "op": "scale",
+      "value": 0.9,
+      "unit": "ratio",
+      "window": {
+        "start": 47,
+        "end": 49
+      },
+      "src": {
+        "message_id": "pilot-015-m0011",
+        "start": 52,
+        "end": 126
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "pilot-015-m0013#g0",
+      "type": "lead_time_change",
+      "entity": "LANE-Y",
+      "attribute": "lead_time",
+      "op": "add",
+      "value": 5.0,
+      "unit": "days",
+      "window": {
+        "start": 47,
+        "end": null
+      },
+      "src": {
+        "message_id": "pilot-015-m0013",
+        "start": 106,
+        "end": 229
+      },
+      "confidence": null,
+      "supersedes": []
+    }
+  ],
+  "shocks": [],
+  "provenance": {
+    "benchmark": "pilot",
+    "benchmark_version": "b2",
+    "challenge": {
+      "rewrites_sha256": "cb2347bcaeb64e7441be7f8e9621e126b915936fb64dcbe3c32224100ca8a5cf",
+      "writers": [
+        "W1"
+      ],
+      "verifiers": [
+        "V1"
+      ],
+      "unfiltered": true
+    }
+  }
+}

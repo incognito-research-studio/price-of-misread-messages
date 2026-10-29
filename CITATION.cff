@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+title: "The Price of Misread Operational Messages: code, benchmark streams and run records"
+type: software
+authors:
+  - name: "The authors"
+version: 0.1.0
+date-released: "2026-10-22"
+license: MIT
+keywords:
+  - decision support systems
+  - large language models
+  - supply chain management
+  - inventory planning
+  - order promising
+  - regret decomposition
+  - benchmark

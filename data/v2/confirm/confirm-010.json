@@ -1,0 +1,738 @@
+{
+  "id": "confirm-010",
+  "seed": 1161580284,
+  "world": {
+    "start_period": 36,
+    "end_period": 52,
+    "calendar_year": 2026,
+    "days_per_period": 7,
+    "budget_per_period": null,
+    "restricted_capacity_factor": 0.5,
+    "suppliers": [
+      {
+        "id": "SUP-A",
+        "name": "Supplier A",
+        "aliases": [],
+        "status": "active"
+      },
+      {
+        "id": "SUP-B",
+        "name": "Supplier B",
+        "aliases": [],
+        "status": "active"
+      },
+      {
+        "id": "SUP-C",
+        "name": "Supplier C",
+        "aliases": [],
+        "status": "active"
+      }
+    ],
+    "plants": [
+      {
+        "id": "P1",
+        "name": "Plant 1",
+        "aliases": [],
+        "supplier": "SUP-A",
+        "capacity": 60.5,
+        "skus": [
+          "SKU-01",
+          "SKU-02"
+        ]
+      },
+      {
+        "id": "P2",
+        "name": "Plant 2",
+        "aliases": [],
+        "supplier": "SUP-A",
+        "capacity": 65.1,
+        "skus": [
+          "SKU-03",
+          "SKU-04"
+        ]
+      },
+      {
+        "id": "P3",
+        "name": "Plant 3",
+        "aliases": [],
+        "supplier": "SUP-B",
+        "capacity": 48.8,
+        "skus": [
+          "SKU-02",
+          "SKU-03"
+        ]
+      },
+      {
+        "id": "P4",
+        "name": "Plant 4",
+        "aliases": [],
+        "supplier": "SUP-B",
+        "capacity": 62.4,
+        "skus": [
+          "SKU-01",
+          "SKU-04"
+        ]
+      },
+      {
+        "id": "P5",
+        "name": "Plant 5",
+        "aliases": [],
+        "supplier": "SUP-C",
+        "capacity": 53.2,
+        "skus": [
+          "SKU-01",
+          "SKU-03"
+        ]
+      },
+      {
+        "id": "P6",
+        "name": "Plant 6",
+        "aliases": [],
+        "supplier": "SUP-C",
+        "capacity": 38.6,
+        "skus": [
+          "SKU-02",
+          "SKU-03"
+        ]
+      }
+    ],
+    "lanes": [
+      {
+        "id": "LANE-X",
+        "name": "Port X",
+        "aliases": [],
+        "plant": "P1",
+        "lead_time_days": 19.0
+      },
+      {
+        "id": "LANE-Y",
+        "name": "Port Y",
+        "aliases": [],
+        "plant": "P2",
+        "lead_time_days": 11.0
+      },
+      {
+        "id": "LANE-Z",
+        "name": "Port Z",
+        "aliases": [],
+        "plant": "P3",
+        "lead_time_days": 20.0
+      },
+      {
+        "id": "LANE-W",
+        "name": "Port W",
+        "aliases": [],
+        "plant": "P4",
+        "lead_time_days": 18.0
+      },
+      {
+        "id": "LANE-V",
+        "name": "Port V",
+        "aliases": [],
+        "plant": "P5",
+        "lead_time_days": 11.0
+      },
+      {
+        "id": "LANE-U",
+        "name": "Port U",
+        "aliases": [],
+        "plant": "P6",
+        "lead_time_days": 9.0
+      }
+    ],
+    "skus": [
+      {
+        "id": "SKU-01",
+        "name": "SKU-01",
+        "aliases": [],
+        "base_demand": 76.3,
+        "holding_cost": 0.5,
+        "backlog_cost": 25.0,
+        "initial_stock": 228.9
+      },
+      {
+        "id": "SKU-02",
+        "name": "SKU-02",
+        "aliases": [],
+        "base_demand": 67.7,
+        "holding_cost": 0.5,
+        "backlog_cost": 25.0,
+        "initial_stock": 203.1
+      },
+      {
+        "id": "SKU-03",
+        "name": "SKU-03",
+        "aliases": [],
+        "base_demand": 73.1,
+        "holding_cost": 0.5,
+        "backlog_cost": 25.0,
+        "initial_stock": 219.3
+      },
+      {
+        "id": "SKU-04",
+        "name": "SKU-04",
+        "aliases": [],
+        "base_demand": 83.7,
+        "holding_cost": 0.5,
+        "backlog_cost": 25.0,
+        "initial_stock": 251.1
+      }
+    ],
+    "offers": [
+      {
+        "id": "SUP-A/SKU-01",
+        "name": "Supplier A SKU-01",
+        "aliases": [],
+        "supplier": "SUP-A",
+        "sku": "SKU-01",
+        "price": 10.28,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-A/SKU-02",
+        "name": "Supplier A SKU-02",
+        "aliases": [],
+        "supplier": "SUP-A",
+        "sku": "SKU-02",
+        "price": 10.23,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-A/SKU-03",
+        "name": "Supplier A SKU-03",
+        "aliases": [],
+        "supplier": "SUP-A",
+        "sku": "SKU-03",
+        "price": 8.54,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-A/SKU-04",
+        "name": "Supplier A SKU-04",
+        "aliases": [],
+        "supplier": "SUP-A",
+        "sku": "SKU-04",
+        "price": 13.27,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-B/SKU-01",
+        "name": "Supplier B SKU-01",
+        "aliases": [],
+        "supplier": "SUP-B",
+        "sku": "SKU-01",
+        "price": 9.7,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-B/SKU-02",
+        "name": "Supplier B SKU-02",
+        "aliases": [],
+        "supplier": "SUP-B",
+        "sku": "SKU-02",
+        "price": 10.76,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-B/SKU-03",
+        "name": "Supplier B SKU-03",
+        "aliases": [],
+        "supplier": "SUP-B",
+        "sku": "SKU-03",
+        "price": 8.37,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-B/SKU-04",
+        "name": "Supplier B SKU-04",
+        "aliases": [],
+        "supplier": "SUP-B",
+        "sku": "SKU-04",
+        "price": 12.72,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-C/SKU-01",
+        "name": "Supplier C SKU-01",
+        "aliases": [],
+        "supplier": "SUP-C",
+        "sku": "SKU-01",
+        "price": 9.74,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-C/SKU-02",
+        "name": "Supplier C SKU-02",
+        "aliases": [],
+        "supplier": "SUP-C",
+        "sku": "SKU-02",
+        "price": 10.3,
+        "moq": 0.0
+      },
+      {
+        "id": "SUP-C/SKU-03",
+        "name": "Supplier C SKU-03",
+        "aliases": [],
+        "supplier": "SUP-C",
+        "sku": "SKU-03",
+        "price": 8.51,
+        "moq": 0.0
+      }
+    ],
+    "lots": [
+      {
+        "id": "LOT-7701",
+        "name": "Lot 7701",
+        "aliases": [],
+        "sku": "SKU-01",
+        "quantity": 215.6,
+        "hold_status": "released",
+        "arrival": 40
+      },
+      {
+        "id": "LOT-7702",
+        "name": "Lot 7702",
+        "aliases": [],
+        "sku": "SKU-02",
+        "quantity": 145.6,
+        "hold_status": "released",
+        "arrival": 44
+      },
+      {
+        "id": "LOT-7703",
+        "name": "Lot 7703",
+        "aliases": [],
+        "sku": "SKU-03",
+        "quantity": 177.9,
+        "hold_status": "released",
+        "arrival": 41
+      },
+      {
+        "id": "LOT-7704",
+        "name": "Lot 7704",
+        "aliases": [],
+        "sku": "SKU-04",
+        "quantity": 217.3,
+        "hold_status": "released",
+        "arrival": 39
+      }
+    ]
+  },
+  "messages": [
+    {
+      "id": "confirm-010-m0000",
+      "period": 36,
+      "sender": "QA",
+      "sender_class": "supplier_quality",
+      "channel": "email",
+      "text": "QA has placed Lot 7704 on hold after a failed inspection."
+    },
+    {
+      "id": "confirm-010-m0001",
+      "period": 36,
+      "sender": "Supplier C planning",
+      "sender_class": "supplier_planning",
+      "channel": "portal",
+      "text": "Plant 5 output reduced ~10% wk38 to wk39."
+    },
+    {
+      "id": "confirm-010-m0002",
+      "period": 37,
+      "sender": "Carrier ops",
+      "sender_class": "carrier",
+      "channel": "carrier",
+      "text": "Carrier update: Shipments on Port W delayed by 6 days effective wk38."
+    },
+    {
+      "id": "confirm-010-m0003",
+      "period": 37,
+      "sender": "Carrier ops",
+      "sender_class": "carrier",
+      "channel": "carrier",
+      "text": "Transit via Port U improved by 5 days through Oct."
+    },
+    {
+      "id": "confirm-010-m0004",
+      "period": 38,
+      "sender": "QA",
+      "sender_class": "supplier_quality",
+      "channel": "quality",
+      "text": "QA note: Lot 7701 on hold pending CoA."
+    },
+    {
+      "id": "confirm-010-m0005",
+      "period": 39,
+      "sender": "Sales ops",
+      "sender_class": "sales",
+      "channel": "email",
+      "text": "Forecast for SKU-04 down 15% wk42–44."
+    },
+    {
+      "id": "confirm-010-m0006",
+      "period": 40,
+      "sender": "QA",
+      "sender_class": "supplier_quality",
+      "channel": "email",
+      "text": "Good news: Lot 7704 has been released by QA."
+    },
+    {
+      "id": "confirm-010-m0007",
+      "period": 42,
+      "sender": "QA",
+      "sender_class": "supplier_quality",
+      "channel": "quality",
+      "text": "QA note: Lot 7701 released. Reply to this thread with questions."
+    },
+    {
+      "id": "confirm-010-m0008",
+      "period": 42,
+      "sender": "Carrier ops",
+      "sender_class": "carrier",
+      "channel": "carrier",
+      "text": "Carrier update: Shipments on Port V delayed by 5 days starting week 43. Thanks."
+    },
+    {
+      "id": "confirm-010-m0009",
+      "period": 42,
+      "sender": "Sales ops",
+      "sender_class": "sales",
+      "channel": "email",
+      "text": "Key account orders for SKU-01 up 10% in wk44. Reply to this thread with questions."
+    },
+    {
+      "id": "confirm-010-m0010",
+      "period": 44,
+      "sender": "QA",
+      "sender_class": "supplier_quality",
+      "channel": "email",
+      "text": "QA has placed Lot 7702 on hold after a failed inspection. Reply to this thread with questions."
+    },
+    {
+      "id": "confirm-010-m0011",
+      "period": 45,
+      "sender": "Procurement",
+      "sender_class": "procurement",
+      "channel": "email",
+      "text": "Procurement: Supplier C suspended pending audit. Thanks."
+    },
+    {
+      "id": "confirm-010-m0012",
+      "period": 45,
+      "sender": "Sales ops",
+      "sender_class": "sales",
+      "channel": "email",
+      "text": "Key account orders for SKU-03 up 20% in wk46."
+    },
+    {
+      "id": "confirm-010-m0013",
+      "period": 46,
+      "sender": "Ops desk",
+      "sender_class": "internal",
+      "channel": "email",
+      "text": "Reminder: Plant 1 audit visit scheduled for next month."
+    },
+    {
+      "id": "confirm-010-m0014",
+      "period": 47,
+      "sender": "QA",
+      "sender_class": "supplier_quality",
+      "channel": "email",
+      "text": "Good news: Lot 7702 has been released by QA."
+    },
+    {
+      "id": "confirm-010-m0015",
+      "period": 47,
+      "sender": "Ops desk",
+      "sender_class": "internal",
+      "channel": "email",
+      "text": "Supplier A confirms all open orders are on schedule."
+    }
+  ],
+  "gold": [
+    {
+      "id": "confirm-010-m0000#g0",
+      "type": "quality_hold",
+      "entity": "LOT-7704",
+      "attribute": "hold_status",
+      "op": "set",
+      "value": "held",
+      "unit": null,
+      "window": {
+        "start": 36,
+        "end": null
+      },
+      "src": {
+        "message_id": "confirm-010-m0000",
+        "start": 0,
+        "end": 57
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "confirm-010-m0001#g0",
+      "type": "capacity_change",
+      "entity": "P5",
+      "attribute": "capacity",
+      "op": "scale",
+      "value": 0.9,
+      "unit": "ratio",
+      "window": {
+        "start": 38,
+        "end": 39
+      },
+      "src": {
+        "message_id": "confirm-010-m0001",
+        "start": 0,
+        "end": 41
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "confirm-010-m0002#g0",
+      "type": "lead_time_change",
+      "entity": "LANE-W",
+      "attribute": "lead_time",
+      "op": "add",
+      "value": 6.0,
+      "unit": "days",
+      "window": {
+        "start": 38,
+        "end": null
+      },
+      "src": {
+        "message_id": "confirm-010-m0002",
+        "start": 16,
+        "end": 69
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "confirm-010-m0003#g0",
+      "type": "lead_time_change",
+      "entity": "LANE-U",
+      "attribute": "lead_time",
+      "op": "add",
+      "value": -5.0,
+      "unit": "days",
+      "window": {
+        "start": 37,
+        "end": 44
+      },
+      "src": {
+        "message_id": "confirm-010-m0003",
+        "start": 0,
+        "end": 50
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "confirm-010-m0004#g0",
+      "type": "quality_hold",
+      "entity": "LOT-7701",
+      "attribute": "hold_status",
+      "op": "set",
+      "value": "held",
+      "unit": null,
+      "window": {
+        "start": 38,
+        "end": null
+      },
+      "src": {
+        "message_id": "confirm-010-m0004",
+        "start": 9,
+        "end": 38
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "confirm-010-m0005#g0",
+      "type": "demand_signal",
+      "entity": "SKU-04",
+      "attribute": "demand",
+      "op": "scale",
+      "value": 0.85,
+      "unit": "ratio",
+      "window": {
+        "start": 42,
+        "end": 44
+      },
+      "src": {
+        "message_id": "confirm-010-m0005",
+        "start": 0,
+        "end": 37
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "confirm-010-m0006#g0",
+      "type": "quality_release",
+      "entity": "LOT-7704",
+      "attribute": "hold_status",
+      "op": "set",
+      "value": "released",
+      "unit": null,
+      "window": {
+        "start": 40,
+        "end": null
+      },
+      "src": {
+        "message_id": "confirm-010-m0006",
+        "start": 0,
+        "end": 44
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "confirm-010-m0007#g0",
+      "type": "quality_release",
+      "entity": "LOT-7701",
+      "attribute": "hold_status",
+      "op": "set",
+      "value": "released",
+      "unit": null,
+      "window": {
+        "start": 42,
+        "end": null
+      },
+      "src": {
+        "message_id": "confirm-010-m0007",
+        "start": 9,
+        "end": 27
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "confirm-010-m0008#g0",
+      "type": "lead_time_change",
+      "entity": "LANE-V",
+      "attribute": "lead_time",
+      "op": "add",
+      "value": 5.0,
+      "unit": "days",
+      "window": {
+        "start": 43,
+        "end": null
+      },
+      "src": {
+        "message_id": "confirm-010-m0008",
+        "start": 16,
+        "end": 71
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "confirm-010-m0009#g0",
+      "type": "demand_signal",
+      "entity": "SKU-01",
+      "attribute": "demand",
+      "op": "scale",
+      "value": 1.1,
+      "unit": "ratio",
+      "window": {
+        "start": 44,
+        "end": 44
+      },
+      "src": {
+        "message_id": "confirm-010-m0009",
+        "start": 0,
+        "end": 45
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "confirm-010-m0010#g0",
+      "type": "quality_hold",
+      "entity": "LOT-7702",
+      "attribute": "hold_status",
+      "op": "set",
+      "value": "held",
+      "unit": null,
+      "window": {
+        "start": 44,
+        "end": null
+      },
+      "src": {
+        "message_id": "confirm-010-m0010",
+        "start": 0,
+        "end": 57
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "confirm-010-m0011#g0",
+      "type": "supplier_status",
+      "entity": "SUP-C",
+      "attribute": "supplier_status",
+      "op": "set",
+      "value": "suspended",
+      "unit": null,
+      "window": {
+        "start": 45,
+        "end": null
+      },
+      "src": {
+        "message_id": "confirm-010-m0011",
+        "start": 13,
+        "end": 48
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "confirm-010-m0012#g0",
+      "type": "demand_signal",
+      "entity": "SKU-03",
+      "attribute": "demand",
+      "op": "scale",
+      "value": 1.2,
+      "unit": "ratio",
+      "window": {
+        "start": 46,
+        "end": 46
+      },
+      "src": {
+        "message_id": "confirm-010-m0012",
+        "start": 0,
+        "end": 45
+      },
+      "confidence": null,
+      "supersedes": []
+    },
+    {
+      "id": "confirm-010-m0014#g0",
+      "type": "quality_release",
+      "entity": "LOT-7702",
+      "attribute": "hold_status",
+      "op": "set",
+      "value": "released",
+      "unit": null,
+      "window": {
+        "start": 47,
+        "end": null
+      },
+      "src": {
+        "message_id": "confirm-010-m0014",
+        "start": 0,
+        "end": 44
+      },
+      "confidence": null,
+      "supersedes": []
+    }
+  ],
+  "shocks": [],
+  "provenance": {
+    "benchmark": "confirm",
+    "benchmark_version": "b2"
+  }
+}

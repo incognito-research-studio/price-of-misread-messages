@@ -1,0 +1,14 @@
+recorded 182, replay 182, common 182
+max |diff| 508.6; median 0.25; corr 0.99995
+   ('pilot-019', 'regex') 8,294.5 vs 7,785.8
+   ('pilot-021', 'regex') 2,724.5 vs 2,273.1
+   ('pilot-019', 'regex') 7,903.7 vs 8,328.6
+   ('pilot-021', 'regex') -2,591.1 vs -2,258.8
+   ('pilot-018', 'qwen-json') 106,213.9 vs 106,507.7
+laya-atomic                              n= 70 top10 0.663 vs 0.661  <=0 share 0.46 vs 0.46
+llama-json-constrained                   n=  8 top10 0.702 vs 0.702  <=0 share 0.50 vs 0.50
+qwen-json                                n= 38 top10 0.949 vs 0.949  <=0 share 0.47 vs 0.47
+qwen-json-constrained                    n=  6 top10 0.977 vs 0.985  <=0 share 0.67 vs 0.67
+regex                                    n= 57 top10 0.874 vs 0.878  <=0 share 0.61 vs 0.61
+costliest error same per pair: 73/75
+costliest error same per condition: 6/6

@@ -1,0 +1,58 @@
+# Pilot experiment. Run from the repository root:
+#   cdd generate --config configs/benchmark/pilot.yaml --out data/pilot
+#   cdd -v run --config configs/experiments/pilot.yaml
+name: pilot
+streams: data/pilot
+output_dir: runs
+seed: 0
+demand_cv: 0.2                 # coefficient of variation of the demand noise
+sop: configs/sop/sop-v1.yaml
+approver: magnitude_cap        # always_approve | always_reject | magnitude_cap
+approver_cap: 0.5
+hindsight_time_limit: 60
+benchmark: tuned              # x*: best solver variant on the oracle state; or: hindsight
+tuned_safety_factors: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5]
+
+solver:
+  horizon: 6
+  time_limit: 10
+  safety_factor: 0.0     # tune on development streams and pre-register
+  compute_duals: false
+
+attribution:
+  single_repair: true
+  shapley_permutations: 0      # set > 0 to sample Shapley values (one re-run per new coalition)
+  max_errors: 200
+
+conditions:
+  - name: oracle
+    interpreter: oracle
+    decider: milp
+
+  - name: regex
+    interpreter: regex
+    decider: milp
+
+  # The conditions below need a model client. Point `client` at a factory that returns an
+  # object implementing the interface in docs/adapters.md. Without one they are skipped.
+
+  - name: e2e-llm
+    interpreter: null
+    decider: llm_stream
+    context: full              # or "last:N"
+    client: null
+
+  - name: llm-json
+    interpreter: llm_json
+    decider: milp
+    client: null
+
+  - name: typed-atomic
+    interpreter: typed_atomic
+    decider: milp
+    client: null
+
+  - name: typed-over-oracle-state
+    interpreter: oracle
+    decider: typed_state
+    client: null

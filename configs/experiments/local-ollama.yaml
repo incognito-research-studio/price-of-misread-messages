@@ -1,0 +1,76 @@
+# Pilot with local models served by Ollama. Start the server first (`ollama serve`), then:
+#   cdd generate --config configs/benchmark/pilot.yaml --out data/pilot
+#   cdd -v run --config configs/experiments/local-ollama.yaml
+#
+# The local models are general instruction models. With constrained decoding they stand in
+# for the schema-typed condition (c) and imitate typed-model output, but they return no
+# calibrated probabilities, so they are not typed decision models in the paper's sense.
+name: local-ollama
+streams: data/pilot
+output_dir: runs
+seed: 0
+demand_cv: 0.2
+sop: configs/sop/sop-v1.yaml
+approver: magnitude_cap
+approver_cap: 0.5
+hindsight_time_limit: 60
+benchmark: tuned              # x*: best solver variant on the oracle state; or: hindsight
+tuned_safety_factors: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5]
+
+solver:
+  horizon: 6
+  time_limit: 10
+  safety_factor: 0.0     # tune on development streams and pre-register
+
+attribution:
+  single_repair: true          # replays parsed deltas; no extra model calls
+  shapley_permutations: 0
+
+conditions:
+  - name: oracle
+    interpreter: oracle
+
+  - name: regex
+    interpreter: regex
+
+  # (b) free-form JSON interpreter
+  - name: qwen-json
+    interpreter: llm_json
+    client: cdd.adapters.ollama:make_client
+    client_args: &qwen {model: "qwen2.5:7b-instruct", temperature: 0, seed: 0, cache: true}
+
+  # (c) schema-constrained interpreter
+  - name: qwen-json-constrained
+    interpreter: llm_json
+    constrained: true
+    client: cdd.adapters.ollama:make_client
+    client_args: *qwen
+
+  # Typed-model stand-in: atomic questions answered by constrained decoding
+  - name: qwen-atomic
+    interpreter: typed_atomic
+    client: cdd.adapters.ollama:make_client
+    client_args: *qwen
+
+  # A second model family for the same interpreter
+  - name: llama-json-constrained
+    interpreter: llm_json
+    constrained: true
+    client: cdd.adapters.ollama:make_client
+    client_args: {model: "llama3.1:8b", temperature: 0, seed: 0, cache: true}
+
+  # (a) end-to-end decider: reads the raw stream and returns orders
+  - name: qwen-e2e
+    interpreter: null
+    decider: llm_stream
+    constrained: true
+    context: full
+    client: cdd.adapters.ollama:make_client
+    client_args: *qwen
+
+  # Rival to the solver: the model decides over the compiled oracle state
+  - name: qwen-decides-over-oracle-state
+    interpreter: oracle
+    decider: typed_state
+    client: cdd.adapters.ollama:make_client
+    client_args: *qwen

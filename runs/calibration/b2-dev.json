@@ -1,0 +1,1921 @@
+{
+  "streams": 24,
+  "oracle_rejected": 0,
+  "oracle_unapproved": 0,
+  "oracle_conflicts_dropped": 0,
+  "mean_oracle_cost": 84967.06226574782,
+  "mean_value_of_perfect_information": 16331.397182565308,
+  "by_type": {
+    "capacity_change": {
+      "misses": 53,
+      "costly_share": 0.09433962264150944,
+      "free_share": 0.20754716981132076,
+      "mean_delta_c": 56.09411421481793,
+      "share_of_cost": 0.026269465112780607
+    },
+    "demand_signal": {
+      "misses": 58,
+      "costly_share": 0.27586206896551724,
+      "free_share": 0.06896551724137931,
+      "mean_delta_c": 128.8801980465185,
+      "share_of_cost": 0.04876696048316207
+    },
+    "lead_time_change": {
+      "misses": 39,
+      "costly_share": 0.5128205128205128,
+      "free_share": 0.05128205128205128,
+      "mean_delta_c": 941.2743498830083,
+      "share_of_cost": 0.10256683636785686
+    },
+    "price_change": {
+      "misses": 24,
+      "costly_share": 0.20833333333333334,
+      "free_share": 0.16666666666666666,
+      "mean_delta_c": -13.712391939906714,
+      "share_of_cost": 0.006402320924273348
+    },
+    "quality_hold": {
+      "misses": 36,
+      "costly_share": 0.3611111111111111,
+      "free_share": 0.027777777777777776,
+      "mean_delta_c": 3038.6451524211247,
+      "share_of_cost": 0.3526675868386189
+    },
+    "quality_release": {
+      "misses": 27,
+      "costly_share": 0.6296296296296297,
+      "free_share": 0.0,
+      "mean_delta_c": 296.66259842598487,
+      "share_of_cost": 0.06071822625824627
+    },
+    "supplier_status": {
+      "misses": 33,
+      "costly_share": 0.48484848484848486,
+      "free_share": 0.06060606060606061,
+      "mean_delta_c": 4715.454721533272,
+      "share_of_cost": 0.40260860401506193
+    }
+  },
+  "results": [
+    {
+      "stream": "dev-000",
+      "oracle_cost": 97325.47152764138,
+      "hindsight_cost": 83913.80683283824,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-000",
+          "delta": "dev-000-m0000#g0",
+          "type": "capacity_change",
+          "delta_c": -765.1111680275935
+        },
+        {
+          "stream": "dev-000",
+          "delta": "dev-000-m0001#g0",
+          "type": "demand_signal",
+          "delta_c": 460.234268651795
+        },
+        {
+          "stream": "dev-000",
+          "delta": "dev-000-m0002#g0",
+          "type": "price_change",
+          "delta_c": -336.4975115276029
+        },
+        {
+          "stream": "dev-000",
+          "delta": "dev-000-m0004#g0",
+          "type": "lead_time_change",
+          "delta_c": 607.2067062030401
+        },
+        {
+          "stream": "dev-000",
+          "delta": "dev-000-m0005#g0",
+          "type": "demand_signal",
+          "delta_c": 3.969138275599107
+        },
+        {
+          "stream": "dev-000",
+          "delta": "dev-000-m0006#g0",
+          "type": "quality_hold",
+          "delta_c": 14655.674094251153
+        },
+        {
+          "stream": "dev-000",
+          "delta": "dev-000-m0007#g0",
+          "type": "capacity_change",
+          "delta_c": -214.67161868780386
+        },
+        {
+          "stream": "dev-000",
+          "delta": "dev-000-m0008#g0",
+          "type": "demand_signal",
+          "delta_c": -183.8143474677927
+        },
+        {
+          "stream": "dev-000",
+          "delta": "dev-000-m0010#g0",
+          "type": "lead_time_change",
+          "delta_c": 345.26950031046
+        }
+      ]
+    },
+    {
+      "stream": "dev-001",
+      "oracle_cost": 50637.62826009596,
+      "hindsight_cost": 44313.47737256535,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-001",
+          "delta": "dev-001-m0000#g0",
+          "type": "demand_signal",
+          "delta_c": -11.156642610003473
+        },
+        {
+          "stream": "dev-001",
+          "delta": "dev-001-m0001#g0",
+          "type": "lead_time_change",
+          "delta_c": 410.0524891706227
+        },
+        {
+          "stream": "dev-001",
+          "delta": "dev-001-m0002#g0",
+          "type": "quality_hold",
+          "delta_c": 46315.165368375434
+        },
+        {
+          "stream": "dev-001",
+          "delta": "dev-001-m0003#g0",
+          "type": "lead_time_change",
+          "delta_c": -145.60107186937967
+        },
+        {
+          "stream": "dev-001",
+          "delta": "dev-001-m0004#g0",
+          "type": "capacity_change",
+          "delta_c": 114.77565271999629
+        },
+        {
+          "stream": "dev-001",
+          "delta": "dev-001-m0005#g0",
+          "type": "quality_hold",
+          "delta_c": 3.5875959894256084
+        },
+        {
+          "stream": "dev-001",
+          "delta": "dev-001-m0006#g0",
+          "type": "quality_release",
+          "delta_c": 162.27035846000217
+        },
+        {
+          "stream": "dev-001",
+          "delta": "dev-001-m0007#g0",
+          "type": "quality_hold",
+          "delta_c": 993.6416826175991
+        },
+        {
+          "stream": "dev-001",
+          "delta": "dev-001-m0008#g0",
+          "type": "demand_signal",
+          "delta_c": -414.85635334999824
+        },
+        {
+          "stream": "dev-001",
+          "delta": "dev-001-m0009#g0",
+          "type": "lead_time_change",
+          "delta_c": -38.73216768000566
+        },
+        {
+          "stream": "dev-001",
+          "delta": "dev-001-m0010#g0",
+          "type": "demand_signal",
+          "delta_c": -344.0579374000081
+        },
+        {
+          "stream": "dev-001",
+          "delta": "dev-001-m0012#g0",
+          "type": "quality_release",
+          "delta_c": 1078.020067379999
+        }
+      ]
+    },
+    {
+      "stream": "dev-002",
+      "oracle_cost": 128468.98645797392,
+      "hindsight_cost": 84237.86806496306,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-002",
+          "delta": "dev-002-m0000#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-002",
+          "delta": "dev-002-m0001#g0",
+          "type": "demand_signal",
+          "delta_c": 52.65589272999205
+        },
+        {
+          "stream": "dev-002",
+          "delta": "dev-002-m0002#g0",
+          "type": "supplier_status",
+          "delta_c": 11265.874358680012
+        },
+        {
+          "stream": "dev-002",
+          "delta": "dev-002-m0004#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-002",
+          "delta": "dev-002-m0005#g0",
+          "type": "demand_signal",
+          "delta_c": 64.00723133001884
+        },
+        {
+          "stream": "dev-002",
+          "delta": "dev-002-m0006#g0",
+          "type": "capacity_change",
+          "delta_c": -37.06168312000227
+        },
+        {
+          "stream": "dev-002",
+          "delta": "dev-002-m0007#g0",
+          "type": "lead_time_change",
+          "delta_c": -4.486112960003084
+        },
+        {
+          "stream": "dev-002",
+          "delta": "dev-002-m0008#g0",
+          "type": "demand_signal",
+          "delta_c": 355.0960484399984
+        },
+        {
+          "stream": "dev-002",
+          "delta": "dev-002-m0009#g0",
+          "type": "demand_signal",
+          "delta_c": 355.0960484399984
+        },
+        {
+          "stream": "dev-002",
+          "delta": "dev-002-m0011#g0",
+          "type": "supplier_status",
+          "delta_c": 355.0960484399984
+        }
+      ]
+    },
+    {
+      "stream": "dev-003",
+      "oracle_cost": 113589.55169297852,
+      "hindsight_cost": 91315.19342599048,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-003",
+          "delta": "dev-003-m0000#g0",
+          "type": "price_change",
+          "delta_c": 6.332242649994441
+        },
+        {
+          "stream": "dev-003",
+          "delta": "dev-003-m0001#g0",
+          "type": "quality_hold",
+          "delta_c": -4142.797729600585
+        },
+        {
+          "stream": "dev-003",
+          "delta": "dev-003-m0002#g0",
+          "type": "quality_release",
+          "delta_c": 423.6133087500057
+        },
+        {
+          "stream": "dev-003",
+          "delta": "dev-003-m0003#g0",
+          "type": "lead_time_change",
+          "delta_c": 86.73458648254746
+        },
+        {
+          "stream": "dev-003",
+          "delta": "dev-003-m0004#g0",
+          "type": "capacity_change",
+          "delta_c": -27.77719303740014
+        },
+        {
+          "stream": "dev-003",
+          "delta": "dev-003-m0005#g0",
+          "type": "lead_time_change",
+          "delta_c": 258.9546410585317
+        },
+        {
+          "stream": "dev-003",
+          "delta": "dev-003-m0006#g0",
+          "type": "price_change",
+          "delta_c": -2.7914892792032333
+        },
+        {
+          "stream": "dev-003",
+          "delta": "dev-003-m0007#g0",
+          "type": "capacity_change",
+          "delta_c": -351.66914972578525
+        },
+        {
+          "stream": "dev-003",
+          "delta": "dev-003-m0008#g0",
+          "type": "capacity_change",
+          "delta_c": -38.07127957578632
+        }
+      ]
+    },
+    {
+      "stream": "dev-004",
+      "oracle_cost": 70893.21500923834,
+      "hindsight_cost": 62999.81226353288,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-004",
+          "delta": "dev-004-m0000#g0",
+          "type": "lead_time_change",
+          "delta_c": -265.88052901001356
+        },
+        {
+          "stream": "dev-004",
+          "delta": "dev-004-m0002#g0",
+          "type": "demand_signal",
+          "delta_c": 98.71350177118438
+        },
+        {
+          "stream": "dev-004",
+          "delta": "dev-004-m0003#g0",
+          "type": "quality_hold",
+          "delta_c": -207.03233916700992
+        },
+        {
+          "stream": "dev-004",
+          "delta": "dev-004-m0005#g0",
+          "type": "quality_hold",
+          "delta_c": -293.23666002090613
+        },
+        {
+          "stream": "dev-004",
+          "delta": "dev-004-m0006#g0",
+          "type": "supplier_status",
+          "delta_c": -176.9282516000094
+        },
+        {
+          "stream": "dev-004",
+          "delta": "dev-004-m0007#g0",
+          "type": "capacity_change",
+          "delta_c": 0.371197000000393
+        },
+        {
+          "stream": "dev-004",
+          "delta": "dev-004-m0008#g0",
+          "type": "quality_release",
+          "delta_c": 724.535391454483
+        },
+        {
+          "stream": "dev-004",
+          "delta": "dev-004-m0009#g0",
+          "type": "supplier_status",
+          "delta_c": 18854.300109985677
+        },
+        {
+          "stream": "dev-004",
+          "delta": "dev-004-m0010#g0",
+          "type": "supplier_status",
+          "delta_c": -126.52661031650496
+        },
+        {
+          "stream": "dev-004",
+          "delta": "dev-004-m0011#g0",
+          "type": "price_change",
+          "delta_c": 23.09828848388861
+        },
+        {
+          "stream": "dev-004",
+          "delta": "dev-004-m0012#g0",
+          "type": "price_change",
+          "delta_c": 76.5684751381923
+        },
+        {
+          "stream": "dev-004",
+          "delta": "dev-004-m0013#g0",
+          "type": "quality_release",
+          "delta_c": 710.1218248680816
+        },
+        {
+          "stream": "dev-004",
+          "delta": "dev-004-m0014#g0",
+          "type": "demand_signal",
+          "delta_c": 28.3970269914862
+        },
+        {
+          "stream": "dev-004",
+          "delta": "dev-004-m0016#g0",
+          "type": "capacity_change",
+          "delta_c": -7.593425035811379
+        },
+        {
+          "stream": "dev-004",
+          "delta": "dev-004-m0017#g0",
+          "type": "capacity_change",
+          "delta_c": -347.5195851637109
+        },
+        {
+          "stream": "dev-004",
+          "delta": "dev-004-m0018#g0",
+          "type": "lead_time_change",
+          "delta_c": -44.21853244841623
+        }
+      ]
+    },
+    {
+      "stream": "dev-005",
+      "oracle_cost": 108134.12187719873,
+      "hindsight_cost": 74213.05514661208,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0000#g0",
+          "type": "lead_time_change",
+          "delta_c": 17392.88234365765
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0001#g0",
+          "type": "supplier_status",
+          "delta_c": 173.29117493999365
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0002#g0",
+          "type": "demand_signal",
+          "delta_c": 2148.6417257700086
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0005#g0",
+          "type": "quality_hold",
+          "delta_c": 34010.449220975235
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0006#g0",
+          "type": "supplier_status",
+          "delta_c": 30200.862264535288
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0007#g0",
+          "type": "lead_time_change",
+          "delta_c": 4016.244375545255
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0009#g0",
+          "type": "demand_signal",
+          "delta_c": -2762.8799654255126
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0010#g0",
+          "type": "capacity_change",
+          "delta_c": -1199.79083088474
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0011#g0",
+          "type": "quality_hold",
+          "delta_c": -2968.4193412636378
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0012#g0",
+          "type": "quality_hold",
+          "delta_c": -2083.1720930012816
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0013#g0",
+          "type": "lead_time_change",
+          "delta_c": 280.76498440997966
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0014#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0015#g0",
+          "type": "demand_signal",
+          "delta_c": -110.76780000000144
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0016#g0",
+          "type": "lead_time_change",
+          "delta_c": 1744.1736394099862
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0017#g0",
+          "type": "supplier_status",
+          "delta_c": 93.33632219998981
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0018#g0",
+          "type": "quality_release",
+          "delta_c": 8774.545467552642
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0019#g0",
+          "type": "quality_release",
+          "delta_c": 6117.159624899985
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0020#g0",
+          "type": "demand_signal",
+          "delta_c": 1359.937806899994
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0021#g0",
+          "type": "demand_signal",
+          "delta_c": 1364.9582099999825
+        },
+        {
+          "stream": "dev-005",
+          "delta": "dev-005-m0022#g0",
+          "type": "supplier_status",
+          "delta_c": 1429.638803370006
+        }
+      ]
+    },
+    {
+      "stream": "dev-006",
+      "oracle_cost": 75348.15467991849,
+      "hindsight_cost": 64312.25691545704,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-006",
+          "delta": "dev-006-m0000#g0",
+          "type": "capacity_change",
+          "delta_c": -10.613335789603298
+        },
+        {
+          "stream": "dev-006",
+          "delta": "dev-006-m0001#g0",
+          "type": "demand_signal",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-006",
+          "delta": "dev-006-m0003#g0",
+          "type": "lead_time_change",
+          "delta_c": -93.18709033200867
+        },
+        {
+          "stream": "dev-006",
+          "delta": "dev-006-m0004#g0",
+          "type": "price_change",
+          "delta_c": 617.2547831816046
+        },
+        {
+          "stream": "dev-006",
+          "delta": "dev-006-m0006#g0",
+          "type": "lead_time_change",
+          "delta_c": -581.8579288128094
+        },
+        {
+          "stream": "dev-006",
+          "delta": "dev-006-m0008#g0",
+          "type": "demand_signal",
+          "delta_c": -236.79620640000212
+        }
+      ]
+    },
+    {
+      "stream": "dev-007",
+      "oracle_cost": 73792.89917721057,
+      "hindsight_cost": 65455.05054447256,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-007",
+          "delta": "dev-007-m0001#g0",
+          "type": "quality_hold",
+          "delta_c": -344.94263935000345
+        },
+        {
+          "stream": "dev-007",
+          "delta": "dev-007-m0002#g0",
+          "type": "quality_hold",
+          "delta_c": -310.9894901433581
+        },
+        {
+          "stream": "dev-007",
+          "delta": "dev-007-m0003#g0",
+          "type": "quality_release",
+          "delta_c": -216.86405143335287
+        },
+        {
+          "stream": "dev-007",
+          "delta": "dev-007-m0004#g0",
+          "type": "quality_release",
+          "delta_c": 631.2823987599841
+        },
+        {
+          "stream": "dev-007",
+          "delta": "dev-007-m0006#g0",
+          "type": "demand_signal",
+          "delta_c": -154.26500125000894
+        },
+        {
+          "stream": "dev-007",
+          "delta": "dev-007-m0008#g0",
+          "type": "demand_signal",
+          "delta_c": 1699.377736614595
+        },
+        {
+          "stream": "dev-007",
+          "delta": "dev-007-m0009#g0",
+          "type": "lead_time_change",
+          "delta_c": 286.9802164580469
+        },
+        {
+          "stream": "dev-007",
+          "delta": "dev-007-m0010#g0",
+          "type": "capacity_change",
+          "delta_c": -23.532251680007903
+        },
+        {
+          "stream": "dev-007",
+          "delta": "dev-007-m0011#g0",
+          "type": "demand_signal",
+          "delta_c": -24.75386434000393
+        }
+      ]
+    },
+    {
+      "stream": "dev-008",
+      "oracle_cost": 112678.26953965647,
+      "hindsight_cost": 100128.10522034658,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-008",
+          "delta": "dev-008-m0001#g0",
+          "type": "demand_signal",
+          "delta_c": 90.3342073400272
+        },
+        {
+          "stream": "dev-008",
+          "delta": "dev-008-m0002#g0",
+          "type": "price_change",
+          "delta_c": -815.5691086129955
+        },
+        {
+          "stream": "dev-008",
+          "delta": "dev-008-m0003#g0",
+          "type": "capacity_change",
+          "delta_c": -75.39418601000216
+        },
+        {
+          "stream": "dev-008",
+          "delta": "dev-008-m0004#g0",
+          "type": "quality_hold",
+          "delta_c": -1498.583122797383
+        },
+        {
+          "stream": "dev-008",
+          "delta": "dev-008-m0005#g0",
+          "type": "quality_hold",
+          "delta_c": 19063.91306781242
+        },
+        {
+          "stream": "dev-008",
+          "delta": "dev-008-m0007#g0",
+          "type": "price_change",
+          "delta_c": -694.2289754749945
+        },
+        {
+          "stream": "dev-008",
+          "delta": "dev-008-m0008#g0",
+          "type": "quality_release",
+          "delta_c": 108.72352347150445
+        },
+        {
+          "stream": "dev-008",
+          "delta": "dev-008-m0009#g0",
+          "type": "supplier_status",
+          "delta_c": -1781.1070103800012
+        },
+        {
+          "stream": "dev-008",
+          "delta": "dev-008-m0011#g0",
+          "type": "quality_hold",
+          "delta_c": -29.876915234999615
+        },
+        {
+          "stream": "dev-008",
+          "delta": "dev-008-m0013#g0",
+          "type": "quality_release",
+          "delta_c": 1.4475731999991694
+        },
+        {
+          "stream": "dev-008",
+          "delta": "dev-008-m0014#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-008",
+          "delta": "dev-008-m0015#g0",
+          "type": "quality_hold",
+          "delta_c": -2465.0144635121396
+        },
+        {
+          "stream": "dev-008",
+          "delta": "dev-008-m0017#g0",
+          "type": "supplier_status",
+          "delta_c": -888.0957380799955
+        }
+      ]
+    },
+    {
+      "stream": "dev-009",
+      "oracle_cost": 82114.72443718172,
+      "hindsight_cost": 71332.80611161374,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-009",
+          "delta": "dev-009-m0000#g0",
+          "type": "capacity_change",
+          "delta_c": -57.688039039989235
+        },
+        {
+          "stream": "dev-009",
+          "delta": "dev-009-m0001#g0",
+          "type": "quality_hold",
+          "delta_c": -507.5902616999956
+        },
+        {
+          "stream": "dev-009",
+          "delta": "dev-009-m0003#g0",
+          "type": "quality_release",
+          "delta_c": 91.83940733000054
+        },
+        {
+          "stream": "dev-009",
+          "delta": "dev-009-m0004#g0",
+          "type": "lead_time_change",
+          "delta_c": -16.848523879991262
+        },
+        {
+          "stream": "dev-009",
+          "delta": "dev-009-m0006#g0",
+          "type": "capacity_change",
+          "delta_c": -59.69649187999312
+        },
+        {
+          "stream": "dev-009",
+          "delta": "dev-009-m0007#g0",
+          "type": "demand_signal",
+          "delta_c": -186.7863035099872
+        },
+        {
+          "stream": "dev-009",
+          "delta": "dev-009-m0009#g0",
+          "type": "capacity_change",
+          "delta_c": -5.033432600001106
+        },
+        {
+          "stream": "dev-009",
+          "delta": "dev-009-m0010#g0",
+          "type": "quality_hold",
+          "delta_c": 2770.8748797466105
+        },
+        {
+          "stream": "dev-009",
+          "delta": "dev-009-m0011#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-009",
+          "delta": "dev-009-m0012#g0",
+          "type": "capacity_change",
+          "delta_c": 15.52539500000421
+        },
+        {
+          "stream": "dev-009",
+          "delta": "dev-009-m0013#g0",
+          "type": "quality_release",
+          "delta_c": 943.0533877400012
+        }
+      ]
+    },
+    {
+      "stream": "dev-010",
+      "oracle_cost": 90350.70410628468,
+      "hindsight_cost": 73410.72100836324,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-010",
+          "delta": "dev-010-m0000#g0",
+          "type": "quality_hold",
+          "delta_c": 3125.466010439719
+        },
+        {
+          "stream": "dev-010",
+          "delta": "dev-010-m0001#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-010",
+          "delta": "dev-010-m0002#g0",
+          "type": "demand_signal",
+          "delta_c": 5568.571321161842
+        },
+        {
+          "stream": "dev-010",
+          "delta": "dev-010-m0003#g0",
+          "type": "demand_signal",
+          "delta_c": 389.04130391000945
+        },
+        {
+          "stream": "dev-010",
+          "delta": "dev-010-m0005#g0",
+          "type": "quality_release",
+          "delta_c": -3622.073140325767
+        },
+        {
+          "stream": "dev-010",
+          "delta": "dev-010-m0006#g0",
+          "type": "supplier_status",
+          "delta_c": -36.471725879993755
+        },
+        {
+          "stream": "dev-010",
+          "delta": "dev-010-m0007#g0",
+          "type": "capacity_change",
+          "delta_c": 1079.2360000000044
+        },
+        {
+          "stream": "dev-010",
+          "delta": "dev-010-m0008#g0",
+          "type": "demand_signal",
+          "delta_c": -1445.7206401999865
+        },
+        {
+          "stream": "dev-010",
+          "delta": "dev-010-m0009#g0",
+          "type": "demand_signal",
+          "delta_c": -2395.319048839985
+        },
+        {
+          "stream": "dev-010",
+          "delta": "dev-010-m0011#g0",
+          "type": "supplier_status",
+          "delta_c": 7721.6455964820925
+        }
+      ]
+    },
+    {
+      "stream": "dev-011",
+      "oracle_cost": 142627.45715211832,
+      "hindsight_cost": 89082.2868061676,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-011",
+          "delta": "dev-011-m0000#g0",
+          "type": "capacity_change",
+          "delta_c": -24.056371100014076
+        },
+        {
+          "stream": "dev-011",
+          "delta": "dev-011-m0001#g0",
+          "type": "capacity_change",
+          "delta_c": 1911.3638999999966
+        },
+        {
+          "stream": "dev-011",
+          "delta": "dev-011-m0003#g0",
+          "type": "quality_hold",
+          "delta_c": -2123.2498438711627
+        },
+        {
+          "stream": "dev-011",
+          "delta": "dev-011-m0004#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-011",
+          "delta": "dev-011-m0005#g0",
+          "type": "capacity_change",
+          "delta_c": 6160.099815890455
+        },
+        {
+          "stream": "dev-011",
+          "delta": "dev-011-m0006#g0",
+          "type": "supplier_status",
+          "delta_c": 1019.9749589999847
+        },
+        {
+          "stream": "dev-011",
+          "delta": "dev-011-m0007#g0",
+          "type": "demand_signal",
+          "delta_c": 1788.6882718050038
+        },
+        {
+          "stream": "dev-011",
+          "delta": "dev-011-m0008#g0",
+          "type": "demand_signal",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-011",
+          "delta": "dev-011-m0009#g0",
+          "type": "supplier_status",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-011",
+          "delta": "dev-011-m0010#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "dev-012",
+      "oracle_cost": 61422.29200890967,
+      "hindsight_cost": 52055.2248800804,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-012",
+          "delta": "dev-012-m0000#g0",
+          "type": "demand_signal",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-012",
+          "delta": "dev-012-m0001#g0",
+          "type": "quality_hold",
+          "delta_c": -1810.2295011700044
+        },
+        {
+          "stream": "dev-012",
+          "delta": "dev-012-m0002#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-012",
+          "delta": "dev-012-m0003#g0",
+          "type": "demand_signal",
+          "delta_c": -21.38814876000106
+        },
+        {
+          "stream": "dev-012",
+          "delta": "dev-012-m0004#g0",
+          "type": "supplier_status",
+          "delta_c": 1264.4420847649599
+        },
+        {
+          "stream": "dev-012",
+          "delta": "dev-012-m0005#g0",
+          "type": "lead_time_change",
+          "delta_c": 1365.3391391463883
+        },
+        {
+          "stream": "dev-012",
+          "delta": "dev-012-m0006#g0",
+          "type": "quality_hold",
+          "delta_c": 2024.9637909520025
+        },
+        {
+          "stream": "dev-012",
+          "delta": "dev-012-m0007#g0",
+          "type": "quality_release",
+          "delta_c": -0.19506882000132464
+        },
+        {
+          "stream": "dev-012",
+          "delta": "dev-012-m0008#g0",
+          "type": "quality_release",
+          "delta_c": -380.52207246980834
+        },
+        {
+          "stream": "dev-012",
+          "delta": "dev-012-m0011#g0",
+          "type": "demand_signal",
+          "delta_c": -32.319694259989774
+        },
+        {
+          "stream": "dev-012",
+          "delta": "dev-012-m0012#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-012",
+          "delta": "dev-012-m0014#g0",
+          "type": "demand_signal",
+          "delta_c": -1515.3210404096026
+        }
+      ]
+    },
+    {
+      "stream": "dev-013",
+      "oracle_cost": 88235.77460883925,
+      "hindsight_cost": 69984.64174505712,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-013",
+          "delta": "dev-013-m0000#g0",
+          "type": "supplier_status",
+          "delta_c": -2.687359999981709
+        },
+        {
+          "stream": "dev-013",
+          "delta": "dev-013-m0001#g0",
+          "type": "quality_hold",
+          "delta_c": -3519.2381565907854
+        },
+        {
+          "stream": "dev-013",
+          "delta": "dev-013-m0002#g0",
+          "type": "price_change",
+          "delta_c": 59.92482421602472
+        },
+        {
+          "stream": "dev-013",
+          "delta": "dev-013-m0004#g0",
+          "type": "supplier_status",
+          "delta_c": 19432.464302065186
+        },
+        {
+          "stream": "dev-013",
+          "delta": "dev-013-m0005#g0",
+          "type": "quality_release",
+          "delta_c": -11188.447708939275
+        },
+        {
+          "stream": "dev-013",
+          "delta": "dev-013-m0006#g0",
+          "type": "quality_hold",
+          "delta_c": -5180.939703024429
+        },
+        {
+          "stream": "dev-013",
+          "delta": "dev-013-m0007#g0",
+          "type": "lead_time_change",
+          "delta_c": 403.89337042270927
+        },
+        {
+          "stream": "dev-013",
+          "delta": "dev-013-m0009#g0",
+          "type": "quality_release",
+          "delta_c": -461.8478089349228
+        },
+        {
+          "stream": "dev-013",
+          "delta": "dev-013-m0010#g0",
+          "type": "supplier_status",
+          "delta_c": 2511.280843827306
+        },
+        {
+          "stream": "dev-013",
+          "delta": "dev-013-m0012#g0",
+          "type": "price_change",
+          "delta_c": 6.768712757824687
+        },
+        {
+          "stream": "dev-013",
+          "delta": "dev-013-m0013#g0",
+          "type": "supplier_status",
+          "delta_c": 24868.748878144193
+        },
+        {
+          "stream": "dev-013",
+          "delta": "dev-013-m0014#g0",
+          "type": "demand_signal",
+          "delta_c": -1046.2139999999927
+        },
+        {
+          "stream": "dev-013",
+          "delta": "dev-013-m0015#g0",
+          "type": "lead_time_change",
+          "delta_c": 4109.308606239501
+        }
+      ]
+    },
+    {
+      "stream": "dev-014",
+      "oracle_cost": 76019.10017078588,
+      "hindsight_cost": 67821.13916174365,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-014",
+          "delta": "dev-014-m0000#g0",
+          "type": "supplier_status",
+          "delta_c": -271.6181314300047
+        },
+        {
+          "stream": "dev-014",
+          "delta": "dev-014-m0001#g0",
+          "type": "capacity_change",
+          "delta_c": 38.4768185599969
+        },
+        {
+          "stream": "dev-014",
+          "delta": "dev-014-m0002#g0",
+          "type": "demand_signal",
+          "delta_c": 161.38030154399166
+        },
+        {
+          "stream": "dev-014",
+          "delta": "dev-014-m0003#g0",
+          "type": "supplier_status",
+          "delta_c": 5641.009301088852
+        },
+        {
+          "stream": "dev-014",
+          "delta": "dev-014-m0004#g0",
+          "type": "demand_signal",
+          "delta_c": -55.81134583000676
+        },
+        {
+          "stream": "dev-014",
+          "delta": "dev-014-m0007#g0",
+          "type": "capacity_change",
+          "delta_c": 94.62358966999454
+        },
+        {
+          "stream": "dev-014",
+          "delta": "dev-014-m0009#g0",
+          "type": "supplier_status",
+          "delta_c": -107.51392070000293
+        },
+        {
+          "stream": "dev-014",
+          "delta": "dev-014-m0010#g0",
+          "type": "demand_signal",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-014",
+          "delta": "dev-014-m0011#g0",
+          "type": "supplier_status",
+          "delta_c": -209.38743774000613
+        },
+        {
+          "stream": "dev-014",
+          "delta": "dev-014-m0012#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-014",
+          "delta": "dev-014-m0013#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-014",
+          "delta": "dev-014-m0014#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "dev-015",
+      "oracle_cost": 70107.44631481195,
+      "hindsight_cost": 57397.93055751187,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-015",
+          "delta": "dev-015-m0000#g0",
+          "type": "supplier_status",
+          "delta_c": -676.3373183184885
+        },
+        {
+          "stream": "dev-015",
+          "delta": "dev-015-m0001#g0",
+          "type": "demand_signal",
+          "delta_c": -49.595000000001164
+        },
+        {
+          "stream": "dev-015",
+          "delta": "dev-015-m0003#g0",
+          "type": "capacity_change",
+          "delta_c": 1090.0935619590018
+        },
+        {
+          "stream": "dev-015",
+          "delta": "dev-015-m0004#g0",
+          "type": "lead_time_change",
+          "delta_c": -1293.807228180478
+        },
+        {
+          "stream": "dev-015",
+          "delta": "dev-015-m0006#g0",
+          "type": "supplier_status",
+          "delta_c": 546.6616535415087
+        },
+        {
+          "stream": "dev-015",
+          "delta": "dev-015-m0007#g0",
+          "type": "lead_time_change",
+          "delta_c": -100.2573435164959
+        },
+        {
+          "stream": "dev-015",
+          "delta": "dev-015-m0008#g0",
+          "type": "quality_hold",
+          "delta_c": 7588.856226744581
+        },
+        {
+          "stream": "dev-015",
+          "delta": "dev-015-m0009#g0",
+          "type": "capacity_change",
+          "delta_c": -105.4026012494869
+        },
+        {
+          "stream": "dev-015",
+          "delta": "dev-015-m0010#g0",
+          "type": "quality_hold",
+          "delta_c": 971.7525875590218
+        },
+        {
+          "stream": "dev-015",
+          "delta": "dev-015-m0012#g0",
+          "type": "price_change",
+          "delta_c": 936.1014862690063
+        },
+        {
+          "stream": "dev-015",
+          "delta": "dev-015-m0013#g0",
+          "type": "quality_release",
+          "delta_c": 667.8463715260004
+        },
+        {
+          "stream": "dev-015",
+          "delta": "dev-015-m0014#g0",
+          "type": "quality_release",
+          "delta_c": 1251.0439307470078
+        }
+      ]
+    },
+    {
+      "stream": "dev-016",
+      "oracle_cost": 54878.728027225814,
+      "hindsight_cost": 44605.85573609035,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-016",
+          "delta": "dev-016-m0000#g0",
+          "type": "demand_signal",
+          "delta_c": 1089.738760486347
+        },
+        {
+          "stream": "dev-016",
+          "delta": "dev-016-m0001#g0",
+          "type": "demand_signal",
+          "delta_c": 4.92926860175794
+        },
+        {
+          "stream": "dev-016",
+          "delta": "dev-016-m0002#g0",
+          "type": "supplier_status",
+          "delta_c": 5444.91310562523
+        },
+        {
+          "stream": "dev-016",
+          "delta": "dev-016-m0003#g0",
+          "type": "demand_signal",
+          "delta_c": 64.54665404000116
+        },
+        {
+          "stream": "dev-016",
+          "delta": "dev-016-m0006#g0",
+          "type": "supplier_status",
+          "delta_c": 73.14282806543633
+        },
+        {
+          "stream": "dev-016",
+          "delta": "dev-016-m0007#g0",
+          "type": "demand_signal",
+          "delta_c": 82.28029300500202
+        },
+        {
+          "stream": "dev-016",
+          "delta": "dev-016-m0008#g0",
+          "type": "lead_time_change",
+          "delta_c": 413.9620273668261
+        },
+        {
+          "stream": "dev-016",
+          "delta": "dev-016-m0009#g0",
+          "type": "demand_signal",
+          "delta_c": -14.094469999996363
+        },
+        {
+          "stream": "dev-016",
+          "delta": "dev-016-m0010#g0",
+          "type": "capacity_change",
+          "delta_c": -85.14883279999776
+        },
+        {
+          "stream": "dev-016",
+          "delta": "dev-016-m0011#g0",
+          "type": "demand_signal",
+          "delta_c": 97.87950347750302
+        },
+        {
+          "stream": "dev-016",
+          "delta": "dev-016-m0012#g0",
+          "type": "capacity_change",
+          "delta_c": -16.35020543999417
+        },
+        {
+          "stream": "dev-016",
+          "delta": "dev-016-m0013#g0",
+          "type": "price_change",
+          "delta_c": 204.72489097750804
+        }
+      ]
+    },
+    {
+      "stream": "dev-017",
+      "oracle_cost": 92602.18393611061,
+      "hindsight_cost": 62308.46384557832,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-017",
+          "delta": "dev-017-m0000#g0",
+          "type": "capacity_change",
+          "delta_c": -666.0571687599877
+        },
+        {
+          "stream": "dev-017",
+          "delta": "dev-017-m0001#g0",
+          "type": "demand_signal",
+          "delta_c": -501.72960027999943
+        },
+        {
+          "stream": "dev-017",
+          "delta": "dev-017-m0003#g0",
+          "type": "price_change",
+          "delta_c": -12.964055213407846
+        },
+        {
+          "stream": "dev-017",
+          "delta": "dev-017-m0004#g0",
+          "type": "capacity_change",
+          "delta_c": -30.97142833119142
+        },
+        {
+          "stream": "dev-017",
+          "delta": "dev-017-m0005#g0",
+          "type": "lead_time_change",
+          "delta_c": -108.06894160340016
+        },
+        {
+          "stream": "dev-017",
+          "delta": "dev-017-m0006#g0",
+          "type": "quality_hold",
+          "delta_c": -297.3873103033984
+        },
+        {
+          "stream": "dev-017",
+          "delta": "dev-017-m0007#g0",
+          "type": "quality_release",
+          "delta_c": 491.72846457081323
+        }
+      ]
+    },
+    {
+      "stream": "dev-018",
+      "oracle_cost": 77532.46151150358,
+      "hindsight_cost": 66371.81790846179,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-018",
+          "delta": "dev-018-m0000#g0",
+          "type": "capacity_change",
+          "delta_c": -674.6597487416439
+        },
+        {
+          "stream": "dev-018",
+          "delta": "dev-018-m0002#g0",
+          "type": "demand_signal",
+          "delta_c": 670.2336640871508
+        },
+        {
+          "stream": "dev-018",
+          "delta": "dev-018-m0003#g0",
+          "type": "supplier_status",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-018",
+          "delta": "dev-018-m0004#g0",
+          "type": "lead_time_change",
+          "delta_c": 5749.4511560366955
+        },
+        {
+          "stream": "dev-018",
+          "delta": "dev-018-m0006#g0",
+          "type": "price_change",
+          "delta_c": -46.14695844599919
+        },
+        {
+          "stream": "dev-018",
+          "delta": "dev-018-m0007#g0",
+          "type": "quality_hold",
+          "delta_c": -1457.9397505136876
+        },
+        {
+          "stream": "dev-018",
+          "delta": "dev-018-m0008#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-018",
+          "delta": "dev-018-m0009#g0",
+          "type": "quality_release",
+          "delta_c": 1295.144709428103
+        },
+        {
+          "stream": "dev-018",
+          "delta": "dev-018-m0010#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-018",
+          "delta": "dev-018-m0012#g0",
+          "type": "supplier_status",
+          "delta_c": 30207.309131063303
+        },
+        {
+          "stream": "dev-018",
+          "delta": "dev-018-m0013#g0",
+          "type": "quality_release",
+          "delta_c": 183.616384496112
+        },
+        {
+          "stream": "dev-018",
+          "delta": "dev-018-m0014#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-018",
+          "delta": "dev-018-m0015#g0",
+          "type": "demand_signal",
+          "delta_c": -16.487966629196308
+        },
+        {
+          "stream": "dev-018",
+          "delta": "dev-018-m0016#g0",
+          "type": "lead_time_change",
+          "delta_c": 653.8966019236104
+        },
+        {
+          "stream": "dev-018",
+          "delta": "dev-018-m0017#g0",
+          "type": "lead_time_change",
+          "delta_c": 33.48119593769661
+        },
+        {
+          "stream": "dev-018",
+          "delta": "dev-018-m0018#g0",
+          "type": "quality_hold",
+          "delta_c": 994.1486545749212
+        }
+      ]
+    },
+    {
+      "stream": "dev-019",
+      "oracle_cost": 88218.70292235729,
+      "hindsight_cost": 74515.3167852856,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-019",
+          "delta": "dev-019-m0000#g0",
+          "type": "demand_signal",
+          "delta_c": 43.47483754000859
+        },
+        {
+          "stream": "dev-019",
+          "delta": "dev-019-m0001#g0",
+          "type": "demand_signal",
+          "delta_c": -43.40699999999197
+        },
+        {
+          "stream": "dev-019",
+          "delta": "dev-019-m0002#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-019",
+          "delta": "dev-019-m0003#g0",
+          "type": "lead_time_change",
+          "delta_c": 333.3233203941345
+        },
+        {
+          "stream": "dev-019",
+          "delta": "dev-019-m0004#g0",
+          "type": "price_change",
+          "delta_c": -180.4607759967912
+        },
+        {
+          "stream": "dev-019",
+          "delta": "dev-019-m0005#g0",
+          "type": "capacity_change",
+          "delta_c": -578.5479204595904
+        },
+        {
+          "stream": "dev-019",
+          "delta": "dev-019-m0006#g0",
+          "type": "demand_signal",
+          "delta_c": 714.5566394572088
+        },
+        {
+          "stream": "dev-019",
+          "delta": "dev-019-m0007#g0",
+          "type": "capacity_change",
+          "delta_c": -612.6603115307953
+        },
+        {
+          "stream": "dev-019",
+          "delta": "dev-019-m0008#g0",
+          "type": "quality_hold",
+          "delta_c": -753.1796318349225
+        }
+      ]
+    },
+    {
+      "stream": "dev-020",
+      "oracle_cost": 69026.06483646182,
+      "hindsight_cost": 59578.35204862032,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-020",
+          "delta": "dev-020-m0000#g0",
+          "type": "demand_signal",
+          "delta_c": -52.37524172000121
+        },
+        {
+          "stream": "dev-020",
+          "delta": "dev-020-m0001#g0",
+          "type": "price_change",
+          "delta_c": 172.28686018839653
+        },
+        {
+          "stream": "dev-020",
+          "delta": "dev-020-m0003#g0",
+          "type": "demand_signal",
+          "delta_c": 234.7326699763653
+        },
+        {
+          "stream": "dev-020",
+          "delta": "dev-020-m0004#g0",
+          "type": "capacity_change",
+          "delta_c": -520.4626415000093
+        },
+        {
+          "stream": "dev-020",
+          "delta": "dev-020-m0006#g0",
+          "type": "price_change",
+          "delta_c": 41.71421587558871
+        },
+        {
+          "stream": "dev-020",
+          "delta": "dev-020-m0008#g0",
+          "type": "quality_hold",
+          "delta_c": -1368.894640419996
+        },
+        {
+          "stream": "dev-020",
+          "delta": "dev-020-m0009#g0",
+          "type": "quality_release",
+          "delta_c": 0.47443899999780115
+        },
+        {
+          "stream": "dev-020",
+          "delta": "dev-020-m0010#g0",
+          "type": "supplier_status",
+          "delta_c": -37.50917995000782
+        },
+        {
+          "stream": "dev-020",
+          "delta": "dev-020-m0011#g0",
+          "type": "capacity_change",
+          "delta_c": 7.170899999997346
+        },
+        {
+          "stream": "dev-020",
+          "delta": "dev-020-m0012#g0",
+          "type": "demand_signal",
+          "delta_c": -4.493869780009845
+        }
+      ]
+    },
+    {
+      "stream": "dev-021",
+      "oracle_cost": 73397.11911072793,
+      "hindsight_cost": 64656.3727213627,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-021",
+          "delta": "dev-021-m0000#g0",
+          "type": "quality_hold",
+          "delta_c": -312.62368215000606
+        },
+        {
+          "stream": "dev-021",
+          "delta": "dev-021-m0001#g0",
+          "type": "capacity_change",
+          "delta_c": -44.5750039400009
+        },
+        {
+          "stream": "dev-021",
+          "delta": "dev-021-m0002#g0",
+          "type": "quality_release",
+          "delta_c": 439.77203741999983
+        },
+        {
+          "stream": "dev-021",
+          "delta": "dev-021-m0003#g0",
+          "type": "lead_time_change",
+          "delta_c": -39.363240116799716
+        },
+        {
+          "stream": "dev-021",
+          "delta": "dev-021-m0004#g0",
+          "type": "price_change",
+          "delta_c": 417.11646446319355
+        },
+        {
+          "stream": "dev-021",
+          "delta": "dev-021-m0006#g0",
+          "type": "capacity_change",
+          "delta_c": -9.850337187992409
+        },
+        {
+          "stream": "dev-021",
+          "delta": "dev-021-m0008#g0",
+          "type": "capacity_change",
+          "delta_c": -147.76696024800185
+        },
+        {
+          "stream": "dev-021",
+          "delta": "dev-021-m0010#g0",
+          "type": "supplier_status",
+          "delta_c": -921.0269626640074
+        },
+        {
+          "stream": "dev-021",
+          "delta": "dev-021-m0012#g0",
+          "type": "demand_signal",
+          "delta_c": 27.60806600000069
+        },
+        {
+          "stream": "dev-021",
+          "delta": "dev-021-m0014#g0",
+          "type": "lead_time_change",
+          "delta_c": -383.1592023099947
+        },
+        {
+          "stream": "dev-021",
+          "delta": "dev-021-m0015#g0",
+          "type": "price_change",
+          "delta_c": -398.4810106079967
+        },
+        {
+          "stream": "dev-021",
+          "delta": "dev-021-m0018#g0",
+          "type": "supplier_status",
+          "delta_c": -258.7763081620069
+        }
+      ]
+    },
+    {
+      "stream": "dev-022",
+      "oracle_cost": 73954.76547453967,
+      "hindsight_cost": 64973.18552956778,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-022",
+          "delta": "dev-022-m0000#g0",
+          "type": "lead_time_change",
+          "delta_c": 269.06710191001184
+        },
+        {
+          "stream": "dev-022",
+          "delta": "dev-022-m0002#g0",
+          "type": "demand_signal",
+          "delta_c": 468.6410301032738
+        },
+        {
+          "stream": "dev-022",
+          "delta": "dev-022-m0003#g0",
+          "type": "capacity_change",
+          "delta_c": -437.60483835998457
+        },
+        {
+          "stream": "dev-022",
+          "delta": "dev-022-m0004#g0",
+          "type": "quality_hold",
+          "delta_c": 5891.530396068745
+        },
+        {
+          "stream": "dev-022",
+          "delta": "dev-022-m0005#g0",
+          "type": "lead_time_change",
+          "delta_c": 1580.4172923426377
+        },
+        {
+          "stream": "dev-022",
+          "delta": "dev-022-m0006#g0",
+          "type": "quality_hold",
+          "delta_c": 2710.05045985333
+        },
+        {
+          "stream": "dev-022",
+          "delta": "dev-022-m0008#g0",
+          "type": "demand_signal",
+          "delta_c": -414.65550559999247
+        },
+        {
+          "stream": "dev-022",
+          "delta": "dev-022-m0009#g0",
+          "type": "quality_release",
+          "delta_c": 200.1835255699989
+        },
+        {
+          "stream": "dev-022",
+          "delta": "dev-022-m0010#g0",
+          "type": "lead_time_change",
+          "delta_c": -284.5837837099971
+        },
+        {
+          "stream": "dev-022",
+          "delta": "dev-022-m0011#g0",
+          "type": "price_change",
+          "delta_c": -403.8487655999925
+        },
+        {
+          "stream": "dev-022",
+          "delta": "dev-022-m0012#g0",
+          "type": "lead_time_change",
+          "delta_c": 326.76153205956507
+        }
+      ]
+    },
+    {
+      "stream": "dev-023",
+      "oracle_cost": 67853.67153817732,
+      "hindsight_cost": 58273.22136409776,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "dev-023",
+          "delta": "dev-023-m0001#g0",
+          "type": "lead_time_change",
+          "delta_c": -932.4087035628763
+        },
+        {
+          "stream": "dev-023",
+          "delta": "dev-023-m0002#g0",
+          "type": "capacity_change",
+          "delta_c": -15.86250000000291
+        },
+        {
+          "stream": "dev-023",
+          "delta": "dev-023-m0003#g0",
+          "type": "demand_signal",
+          "delta_c": 26.397052309999708
+        },
+        {
+          "stream": "dev-023",
+          "delta": "dev-023-m0004#g0",
+          "type": "lead_time_change",
+          "delta_c": 373.99521894409554
+        },
+        {
+          "stream": "dev-023",
+          "delta": "dev-023-m0005#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "dev-023",
+          "delta": "dev-023-m0007#g0",
+          "type": "capacity_change",
+          "delta_c": -177.07732136717823
+        },
+        {
+          "stream": "dev-023",
+          "delta": "dev-023-m0009#g0",
+          "type": "capacity_change",
+          "delta_c": -170.4709161399951
+        },
+        {
+          "stream": "dev-023",
+          "delta": "dev-023-m0010#g0",
+          "type": "quality_hold",
+          "delta_c": -53.51127313000325
+        },
+        {
+          "stream": "dev-023",
+          "delta": "dev-023-m0011#g0",
+          "type": "quality_release",
+          "delta_c": -416.58218820000184
+        }
+      ]
+    }
+  ]
+}

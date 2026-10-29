@@ -1,0 +1,33 @@
+== icores-replication-para: 48 streams, conditions ['laya-atomic', 'llama-json-constrained', 'no-update', 'oracle', 'qwen-atomic', 'qwen-json', 'qwen-json-constrained', 'regex']
+
+== PRIMARY: cost of Qwen free JSON minus Qwen constrained JSON, per stream
+   paired streams 48; mean 7,916.1; median 304.8; free costs more on 26, less on 14
+   95% interval [3,863.1, 12,548.8]  ->  REPLICATED (lower bound above 0)
+
+== SECONDARY (descriptive, unadjusted)
+   R_interp per reader:
+     no-update                mean   22,866.9 [14,688.8, 33,624.4]  median  13,795.7  non-zero 48/48
+     regex                    mean    2,520.2 [620.9, 4,951.4]  median       0.0  non-zero 42/48
+     qwen-json                mean    8,109.8 [4,074.5, 12,696.0]  median     905.2  non-zero 42/48
+     qwen-json-constrained    mean      193.7 [-36.5, 505.6]  median       0.0  non-zero 9/48
+     qwen-atomic              mean       82.3 [0.0, 226.7]  median       0.0  non-zero 2/48
+     llama-json-constrained   mean      798.7 [-1.8, 2,270.0]  median       0.0  non-zero 10/48
+     laya-atomic              mean    5,059.3 [2,728.6, 7,718.3]  median     244.5  non-zero 42/48
+   cost minus no-update (negative: the reader beats ignoring messages):
+     regex                    mean  -20,346.7 [-31,059.2, -12,382.5] over 48 streams
+     qwen-json                mean  -14,757.1 [-25,143.4, -7,378.7] over 48 streams
+     qwen-json-constrained    mean  -22,673.2 [-33,386.0, -14,528.9] over 48 streams
+     qwen-atomic              mean  -22,784.6 [-33,531.8, -14,603.5] over 48 streams
+     llama-json-constrained   mean  -22,068.2 [-32,671.2, -14,020.2] over 48 streams
+     laya-atomic              mean  -17,807.6 [-28,258.4, -9,875.4] over 48 streams
+   Kendall tau, mean F1 against lower mean cost, 6 readers, 48 streams: 0.73 [0.47, 0.87]
+   cost concentration (Shapley, readers with at least 30 errors):
+     regex                    114 errors; top 11 carry 81% of the positive Shapley value
+     qwen-json                121 errors; top 12 carry 75% of the positive Shapley value
+     qwen-json-constrained    25 errors (fewer than 30, not reported)
+     qwen-atomic              4 errors (fewer than 30, not reported)
+     llama-json-constrained   19 errors (fewer than 30, not reported)
+     laya-atomic              156 errors; top 16 carry 81% of the positive Shapley value
+   positive Shapley share by delta_type, pooled over readers: supplier_status 70%, quality_hold 16%, demand_signal 6%, lead_time_change 5%, capacity_change 2%, quality_release 1%, price_change 1%
+   positive Shapley share by kind, pooled over readers: missed 72%, wrong_type 22%, mis_timed 5%, wrong_value 1%, spurious 0%, mis_scoped 0%, provenance 0%
+   paraphrase (data/v2/confirm-para): {'messages': 710, 'accepted': 666, 'unchanged': 2, 'fallback': 44}

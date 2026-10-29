@@ -1,0 +1,27 @@
+== icores-challenge: 4 streams
+   reader                    gold  identified  complete  applied  spurious  parse failures by slot      R_interp mean / median
+   regex                       45    30   67%   16  53%       16         1  {'value': 10}                   24,587 / 334
+   qwen-json                   45    29   64%   16  55%       16         2  {'interpreter': 11, 'value': 10, 'entity': 1}      7,264 / 754
+   qwen-json-constrained       45    25   56%   15  60%       12         2  {'value': 25}                      624 / 1,172
+   qwen-atomic                 45    45  100%   26  58%       25         0  -                               22,238 / 1,041
+   llama-json-constrained      45    29   64%   21  72%       18         1  {'value': 20, 'interpreter': 1}     -1,457 / -119
+   laya-atomic                 45    38   84%   17  45%       12         0  {'value': 3}                     7,507 / 312
+   gold-span                   45    39   87%   23  59%       23         0  {'value': 6}                    20,527 / -2
+
+== icores-final-readers-para-r3-shapley: 4 streams
+   reader                    gold  identified  complete  applied  spurious  parse failures by slot      R_interp mean / median
+   regex                       45    37   82%   37 100%       37         1  -                                 -381 / -14
+   qwen-json                   45    40   89%   37  92%       37         0  -                               13,627 / 11,043
+   qwen-json-constrained       45    45  100%   45 100%       45         0  -                                    0 / 0
+   qwen-atomic                 45    44   98%   44 100%       44         0  -                                 -908 / 0
+   llama-json-constrained      45    43   96%   43 100%       43         0  -                               -2,934 / 0
+   laya-atomic                 45    40   89%   35  88%       31         2  -                                1,763 / 2,022
+
+== icores-final-readers-template-r2: 4 streams
+   reader                    gold  identified  complete  applied  spurious  parse failures by slot      R_interp mean / median
+   regex                       45    45  100%   45 100%       45         0  -                                    0 / 0
+   qwen-json                   45    44   98%   44 100%       44         0  -                                   -3 / 0
+   qwen-json-constrained       45    42   93%   42 100%       41         0  -                                    1 / 0
+   qwen-atomic                 45    45  100%   45 100%       45         0  -                                    0 / 0
+   llama-json-constrained      45    42   93%   42 100%       42         0  -                                    1 / 0
+   laya-atomic                 45    42   93%   33  79%       30         3  -                                1,483 / 840

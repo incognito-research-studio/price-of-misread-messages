@@ -1,0 +1,43 @@
+== readers: icores-final-readers-para-r2 (168 rows), icores-final-readers-template-r2 (168 rows)
+   streams: 24; VPI mean 16,643; oracle cost mean 85,672
+-- Oracle
+   template    F1 1.000  regret mean         0 [0, 0]  median        0  non-zero 0/24  cost ratio 1.000  parse failures 0.0  rejected 0.0  conflicts dropped 0  capped 0
+   paraphrased F1 1.000  regret mean         0 [0, 0]  median        0  non-zero 0/24  cost ratio 1.000  parse failures 0.0  rejected 0.0  conflicts dropped 0  capped 0
+   paraphrase minus template regret: 0 [0, 0] (paired)
+-- Regex
+   template    F1 1.000  regret mean         0 [0, 0]  median        0  non-zero 0/24  cost ratio 1.000  parse failures 0.6  rejected 0.0  conflicts dropped 0  capped 0
+   paraphrased F1 0.866  regret mean     1,042 [-280, 2,906]  median        0  non-zero 21/24  cost ratio 1.010  parse failures 0.7  rejected 0.1  conflicts dropped 0  capped 0
+   paraphrase minus template regret: 1,042 [-284, 2,783] (paired)
+-- Qwen, free JSON
+   template    F1 0.955  regret mean       449 [-1, 1,050]  median        0  non-zero 13/24  cost ratio 1.005  parse failures 2.8  rejected 0.1  conflicts dropped 0  capped 0
+   paraphrased F1 0.899  regret mean     6,818 [291, 16,467]  median        0  non-zero 16/24  cost ratio 1.052  parse failures 3.2  rejected 0.0  conflicts dropped 0  capped 0
+   paraphrase minus template regret: 6,369 [-54, 16,189] (paired)
+-- Qwen, constrained JSON
+   template    F1 0.962  regret mean       158 [-6, 404]  median        0  non-zero 9/24  cost ratio 1.001  parse failures 2.4  rejected 0.0  conflicts dropped 0  capped 0
+   paraphrased F1 0.980  regret mean       -57 [-164, 14]  median        0  non-zero 4/24  cost ratio 0.999  parse failures 2.4  rejected 0.0  conflicts dropped 0  capped 0
+   paraphrase minus template regret: -215 [-466, -24] (paired)
+-- Llama, constrained JSON
+   template    F1 0.974  regret mean       243 [11, 521]  median        0  non-zero 6/24  cost ratio 1.002  parse failures 0.9  rejected 0.1  conflicts dropped 0  capped 0
+   paraphrased F1 0.975  regret mean      -470 [-1,611, 223]  median        0  non-zero 8/24  cost ratio 0.995  parse failures 1.1  rejected 0.1  conflicts dropped 0  capped 0
+   paraphrase minus template regret: -714 [-1,866, -7] (paired)
+-- Qwen, typed questions
+   template    F1 1.000  regret mean         0 [0, 0]  median        0  non-zero 0/24  cost ratio 1.000  parse failures 0.7  rejected 0.0  conflicts dropped 0  capped 0
+   paraphrased F1 0.992  regret mean      -462 [-1,144, 0]  median        0  non-zero 3/24  cost ratio 0.997  parse failures 0.8  rejected 0.0  conflicts dropped 0  capped 0
+   paraphrase minus template regret: -462 [-1,120, 0] (paired)
+-- Laya, typed questions (zero-shot)
+   template    F1 0.753  regret mean       151 [-513, 854]  median      102  non-zero 20/24  cost ratio 1.000  parse failures 0.5  rejected 0.0  conflicts dropped 0  capped 0
+   paraphrased F1 0.753  regret mean     1,087 [462, 1,802]  median      407  non-zero 20/24  cost ratio 1.011  parse failures 0.4  rejected 0.0  conflicts dropped 0  capped 0
+   paraphrase minus template regret: 936 [194, 1,783] (paired)
+
+== deciders: icores-final-deciders-para (96 rows)
+   qwen-e2e                         decision regret mean   266,946 [224,428, 311,254]  median  248,208  non-zero 24/24  cost ratio 4.21  violations/stream 32.2  invalid lines 0
+   qwen-llm-over-oracle-state       decision regret mean   179,249 [141,661, 219,447]  median  166,351  non-zero 24/24  cost ratio 3.13  violations/stream 56.8  invalid lines 0
+   qwen-decides-over-oracle-state   decision regret mean   233,141 [193,787, 270,970]  median  238,449  non-zero 24/24  cost ratio 3.74  violations/stream 32.2  invalid lines 0
+
+== cost concentration (paraphrased readers, single-repair Delta C)
+   Regex: 57 errors; 61% cost nothing; top 10% (6) carry 85% of positive Delta C; by type: lead_time_change 46%, demand_signal 21%, quality_hold 21%
+   Qwen, free JSON: 38 errors; 47% cost nothing; top 10% (4) carry 94% of positive Delta C; by type: supplier_status 70%, quality_hold 20%, capacity_change 8%
+   Qwen, constrained JSON: 6 errors; 67% cost nothing; top 10% (1) carry 91% of positive Delta C; by type: supplier_status 91%, demand_signal 9%, quality_release 0%
+   Llama, constrained JSON: 8 errors; 50% cost nothing; top 10% (1) carry 70% of positive Delta C; by type: lead_time_change 74%, demand_signal 20%, supplier_status 6%
+   Qwen, typed questions: 3 errors; none raised cost
+   Laya, typed questions (zero-shot): 70 errors; 51% cost nothing; top 10% (7) carry 71% of positive Delta C; by type: demand_signal 35%, supplier_status 24%, lead_time_change 17%

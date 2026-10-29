@@ -1,0 +1,25 @@
+{
+  "rewrites_sha256": "cb2347bcaeb64e7441be7f8e9621e126b915936fb64dcbe3c32224100ca8a5cf",
+  "streams": [
+    {
+      "id": "pilot-000",
+      "messages": 20,
+      "sha256": "057d499f9824d236fcd8b422022ceff6e12b79e739d8f221f52bf92e577ae30c"
+    },
+    {
+      "id": "pilot-015",
+      "messages": 15,
+      "sha256": "a31397a7c67b12df75d1fad0d29ade09102a6f66526cd6ec585c30e3732ec92a"
+    },
+    {
+      "id": "pilot-021",
+      "messages": 16,
+      "sha256": "3339157decfa18464aa12711b83ff4a800aaf165a4a74cce1903d86b77d6cc55"
+    },
+    {
+      "id": "pilot-022",
+      "messages": 8,
+      "sha256": "963a3e432e2be7966e1371a841404186d162add5910fcc6400137b66a2b0d3ca"
+    }
+  ]
+}

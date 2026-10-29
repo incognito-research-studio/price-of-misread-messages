@@ -1,0 +1,185 @@
+{
+ "0.0": {
+  "oracle_cost": 109140.32331300614,
+  "fill_rate_oracle": 0.8063970057805468,
+  "r_interp": {
+   "oracle": 0.0,
+   "no-update": 47538.11717743842,
+   "regex": 7936.258359504814,
+   "qwen-json": 17531.399577826185,
+   "qwen-json-constrained": 838.516526992094,
+   "qwen-atomic": 162.43718184144868,
+   "llama-json-constrained": 1300.647591737744,
+   "laya-atomic": 12102.031380691937
+  },
+  "reader_errors": {
+   "supplier_status": {
+    "errors": 130,
+    "costly_share": 0.7307692307692307,
+    "share_of_cost": 0.7242317834260913
+   },
+   "quality_hold": {
+    "errors": 41,
+    "costly_share": 0.4634146341463415,
+    "share_of_cost": 0.1300489079058192
+   },
+   "quality_release": {
+    "errors": 39,
+    "costly_share": 0.28205128205128205,
+    "share_of_cost": 0.010116333146745064
+   },
+   "lead_time_change": {
+    "errors": 41,
+    "costly_share": 0.5365853658536586,
+    "share_of_cost": 0.06062679081437591
+   },
+   "capacity_change": {
+    "errors": 54,
+    "costly_share": 0.2962962962962963,
+    "share_of_cost": 0.013350133442614681
+   },
+   "demand_signal": {
+    "errors": 90,
+    "costly_share": 0.5777777777777777,
+    "share_of_cost": 0.051212804454019836
+   },
+   "price_change": {
+    "errors": 44,
+    "costly_share": 0.25,
+    "share_of_cost": 0.010413246810334023
+   }
+  },
+  "model_free": {
+   "supplier_status": 0.7752808988764045,
+   "quality_hold": 0.6557377049180327,
+   "quality_release": 0.5208333333333334,
+   "lead_time_change": 0.7659574468085106,
+   "capacity_change": 0.4,
+   "demand_signal": 0.5588235294117647,
+   "price_change": 0.34545454545454546
+  },
+  "seconds": 38.62482841685414
+ },
+ "0.15": {
+  "oracle_cost": 89651.61267073463,
+  "fill_rate_oracle": 0.9196374551048795,
+  "r_interp": {
+   "oracle": 0.0,
+   "no-update": 35332.77350260151,
+   "regex": 5020.108279701445,
+   "qwen-json": 13240.566177879171,
+   "qwen-json-constrained": 702.364943879697,
+   "qwen-atomic": 159.21494241088354,
+   "llama-json-constrained": 1425.6659537709627,
+   "laya-atomic": 9575.750715062499
+  },
+  "reader_errors": {
+   "supplier_status": {
+    "errors": 130,
+    "costly_share": 0.6615384615384615,
+    "share_of_cost": 0.7153193710479202
+   },
+   "quality_hold": {
+    "errors": 41,
+    "costly_share": 0.34146341463414637,
+    "share_of_cost": 0.1434414816967066
+   },
+   "quality_release": {
+    "errors": 39,
+    "costly_share": 0.3333333333333333,
+    "share_of_cost": 0.010478515727100408
+   },
+   "lead_time_change": {
+    "errors": 41,
+    "costly_share": 0.5365853658536586,
+    "share_of_cost": 0.06256705593532172
+   },
+   "capacity_change": {
+    "errors": 54,
+    "costly_share": 0.24074074074074073,
+    "share_of_cost": 0.010563209162514381
+   },
+   "demand_signal": {
+    "errors": 90,
+    "costly_share": 0.43333333333333335,
+    "share_of_cost": 0.0469059451130257
+   },
+   "price_change": {
+    "errors": 44,
+    "costly_share": 0.36363636363636365,
+    "share_of_cost": 0.01072442131741102
+   }
+  },
+  "model_free": {
+   "supplier_status": 0.7415730337078652,
+   "quality_hold": 0.5737704918032787,
+   "quality_release": 0.6458333333333334,
+   "lead_time_change": 0.6382978723404256,
+   "capacity_change": 0.26956521739130435,
+   "demand_signal": 0.4411764705882353,
+   "price_change": 0.36363636363636365
+  },
+  "seconds": 40.04417462507263
+ },
+ "0.3": {
+  "oracle_cost": 87037.90190844379,
+  "fill_rate_oracle": 0.9466760431216584,
+  "r_interp": {
+   "oracle": 0.0,
+   "no-update": 22866.914021279197,
+   "regex": 2520.182898313446,
+   "qwen-json": 8109.7682045228785,
+   "qwen-json-constrained": 193.66990991675507,
+   "qwen-atomic": 82.33245789223884,
+   "llama-json-constrained": 798.7041034986215,
+   "laya-atomic": 5059.286234423532
+  },
+  "reader_errors": {
+   "supplier_status": {
+    "errors": 130,
+    "costly_share": 0.5615384615384615,
+    "share_of_cost": 0.6914177903568864
+   },
+   "quality_hold": {
+    "errors": 41,
+    "costly_share": 0.36585365853658536,
+    "share_of_cost": 0.16078591125775724
+   },
+   "quality_release": {
+    "errors": 39,
+    "costly_share": 0.2564102564102564,
+    "share_of_cost": 0.0063250006881652
+   },
+   "lead_time_change": {
+    "errors": 41,
+    "costly_share": 0.4146341463414634,
+    "share_of_cost": 0.0497603215410332
+   },
+   "capacity_change": {
+    "errors": 54,
+    "costly_share": 0.2037037037037037,
+    "share_of_cost": 0.01606243337701185
+   },
+   "demand_signal": {
+    "errors": 90,
+    "costly_share": 0.4,
+    "share_of_cost": 0.06588615182217611
+   },
+   "price_change": {
+    "errors": 44,
+    "costly_share": 0.3181818181818182,
+    "share_of_cost": 0.009762390956969926
+   }
+  },
+  "model_free": {
+   "supplier_status": 0.5280898876404494,
+   "quality_hold": 0.39344262295081966,
+   "quality_release": 0.6458333333333334,
+   "lead_time_change": 0.4148936170212766,
+   "capacity_change": 0.23478260869565218,
+   "demand_signal": 0.29411764705882354,
+   "price_change": 0.2727272727272727
+  },
+  "seconds": 41.04931866610423
+ }
+}

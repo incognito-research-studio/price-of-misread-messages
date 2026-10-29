@@ -1,0 +1,22 @@
+# Pre-registered SOP thresholds, version sop-v2 (2026-10-23). Do not edit after registration;
+# add sop-v3.yaml instead and record the change in CHANGELOG.md.
+#
+# Changes from sop-v1: SOP-004 checks the sender of every supplier-status change, not only
+# suspensions; SOP-005 admits a supplier-status change only if its span names the supplier;
+# and a conflict between deltas of one period is resolved in favour of the one delta whose
+# sender normally issues its type, before the approver is asked.
+version: sop-v2
+capacity_approval_threshold: 0.25       # relative capacity change that needs approval (SOP-002)
+authorised_status_senders:              # sender classes allowed to set supplier status (SOP-004)
+  - procurement
+  - supplier_quality
+sender_checked_statuses: [active, restricted, suspended]
+grounded_types: [supplier_status]   # SOP-005: the span must name the entity
+type_owners:                            # sender classes that normally issue each delta type
+  capacity_change: [supplier_planning]
+  lead_time_change: [carrier]
+  quality_hold: [supplier_quality]
+  quality_release: [supplier_quality]
+  supplier_status: [procurement, supplier_quality]
+  demand_signal: [sales]
+  price_change: [supplier_finance]

@@ -1,0 +1,17 @@
+# Order-promising study, parameter set v1 (docs/research/icores-revision-scope.md, D7-D10).
+# Proposed 2026-10-26. Frozen 2026-10-27, before any pilot promising run, after a dev check with
+# the gold-update reference only (no reader output); see docs/research/promising-dev-check.md.
+# Synthetic declared values, not measured costs. Penalties are fractions of the unit margin.
+margin_fraction: 0.5      # m_k = 0.5 x mean offer price of SKU k
+lateness_fraction: 0.2    # per unit and week after the requested week
+broken_fraction: 0.5      # per unit not delivered by its promised week
+terminal_fraction: 0.5    # per accepted unit undelivered after the last week
+
+orders_per_week: 3        # per SKU and requested week, Dirichlet(1, 1, 1) shares
+dirichlet_alpha: 1.0
+customer_lead_weeks: [1, 2, 3]
+first_requested_offset: 3 # no orders for the first three requested weeks
+
+max_late_weeks: 2         # a promise may be up to two weeks after the requested week
+time_limit: 10
+reveal_holds: false       # true only in the hold-notice sensitivity

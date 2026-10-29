@@ -1,0 +1,591 @@
+# WP2 challenge rewrites, converted from the writers' workbook.
+
+- id: pilot-000-m0000
+  writer: W1
+  text: 'Subject: Plant 2 capacity, Sept/Oct
+
+
+    Hello planning team,
+
+
+    We have a scheduled overhaul of the press line at Plant 2. Between 14 September and 11 October, Plant 2 will be running at 25% less than its normal capacity. Please plan your call-offs with that in mind.
+
+
+    Regards,
+
+    Martin Kowalski
+
+    Supplier A, Production Planning'
+  evidence: Between 14 September and 11 October, Plant 2 will be running at 25% less than its normal capacity
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0001
+  writer: W1
+  text: 'Portal notice ref. SB-2026-0417: Plant 4 will have 15% more capacity than usual from week 38 through week 40, as we have extra staff on the second shift for that period. Any questions to Ana on ext. 2214.'
+  evidence: Plant 4 will have 15% more capacity than usual from week 38 through week 40
+  verified_by: V1
+  verified: true
+  notes: 'Supplier B is not named. The facts give Plant 4 as a plant of Supplier B, but the text never says ''Supplier B'' (only the ref. SB-2026-0417). Everything else is correct: Plant 4, up 15%, week 38 through week 40, irrelevant numbers used.'
+- id: pilot-000-m0002
+  writer: W1
+  text: 'Hi all,
+
+
+    Following the outcome of last week''s supplier review, and after discussion with finance and the category managers, it has been decided that, with immediate effect and until further notice, Supplier C is suspended and no new orders are to be placed with them.
+
+
+    Thanks,
+
+    Priya (Procurement)'
+  evidence: with immediate effect and until further notice, Supplier C is suspended
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0003
+  writer: W1
+  text: 'Carrier update: because of berth works at Port X, shipments from Plant 1 routed through Port X will take 10 days longer in transit from week 39 until the end of week 42. The Port Z lane from Plant 3 is not affected and keeps its usual transit time.'
+  evidence: shipments from Plant 1 routed through Port X will take 10 days longer in transit from week 39 until the end of week 42
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0004
+  writer: W1
+  text: hi team, quick one. SKU-02 orders will be 30% lower than normal for wk42 + wk43 only, biggest customer is working through their own stock. back to normal after that. thx, Jo
+  evidence: SKU-02 orders will be 30% lower than normal for wk42 + wk43 only
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0005
+  writer: W1
+  text: 'Hi all, FYI the cycle count on Lot 7702 is done: 480 cases of SKU-02, which matches the system. Nothing for planning to action. Cheers, Sam (Ops desk)'
+  evidence: ''
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0006
+  writer: W1
+  text: 'Dear customer,
+
+
+    Please note that, due to higher raw material costs, the Supplier C price for SKU-03 will increase by 5% from 5 October 2026. The new price applies until further notice.
+
+
+    Kind regards,
+
+    Supplier C Billing'
+  evidence: the Supplier C price for SKU-03 will increase by 5% from 5 October 2026. The new price applies until further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0007
+  writer: W1
+  text: 'Morning, weekly check-in from the ops desk: order plan for SKU-01 unchanged, and the Port Z lane is running without delays. Nothing new this week. Sam'
+  evidence: ''
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0008
+  writer: W1
+  text: 'Booking desk notice #88213: the lane through Port Z for shipments from Plant 3 is now 5 days quicker, since we have switched to a direct sailing. This applies from this week (wk 41) to the end of week 49. Questions to the booking desk on ext. 6150.'
+  evidence: the lane through Port Z for shipments from Plant 3 is now 5 days quicker, since we have switched to a direct sailing. This applies from this week (wk 41) to the end of week 49
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0009
+  writer: W1
+  text: 'Good afternoon,
+
+
+    As part of the annual safety inspection programme, which this year has been scheduled together with the replacement of the cooling system, the available capacity of Plant 3 will be reduced by 20% from week 44 through week 45.
+
+
+    Best regards,
+
+    Tomas, Supplier B Planning'
+  evidence: the available capacity of Plant 3 will be reduced by 20% from week 44 through week 45
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0010
+  writer: W1
+  text: Hi all, the suspension of Supplier C that we announced in week 37 is lifted with immediate effect. Supplier C is active again and orders can be placed as normal. Thanks, Priya
+  evidence: the suspension of Supplier C that we announced in week 37 is lifted with immediate effect
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0011
+  writer: W1
+  text: 'Hello,
+
+
+    QA has placed Lot 7702 (SKU-02) on quality hold, effective now and until further notice, pending lab results on a seal defect. Lot 7701 of SKU-01 is not affected and can be used as normal.
+
+
+    Regards,
+
+    Helen, QA'
+  evidence: placed Lot 7702 (SKU-02) on quality hold, effective now and until further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0012
+  writer: W1
+  text: 'Ops desk note: all 12 containers booked on the Port X lane out of Plant 1 this week are confirmed. Nothing else to report.'
+  evidence: ''
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0013
+  writer: W1
+  text: fyi QA put lot 7701 (SKU-01) on hold as of today, until further notice. pls don't ship from it. thx, Helen
+  evidence: put lot 7701 (SKU-01) on hold as of today, until further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0014
+  writer: W1
+  text: 'Hi planning,
+
+
+    Heads-up for SKU-03: customer orders for the week of 9 November (9 to 15 November) will be 30% lower than usual. It''s a one-off, and the following week should be back to normal.
+
+
+    Best, Jo'
+  evidence: 'SKU-03: customer orders for the week of 9 November (9 to 15 November) will be 30% lower than usual'
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0015
+  writer: W1
+  text: Hi all, nothing to flag from the ops desk this week. No disruption expected at Plant 4, and the SKU-02 order plan stays unchanged. Sam
+  evidence: ''
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0016
+  writer: W1
+  text: 'Carrier ops, case 51-7730: while the regular vessel is in dry dock, transit on the Port X lane (shipments from Plant 1) will be 14 days longer from week 49 to week 50 inclusive. For bookings call 0800 555 2190.'
+  evidence: transit on the Port X lane (shipments from Plant 1) will be 14 days longer from week 49 to week 50 inclusive
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0017
+  writer: W1
+  text: 'Dear customer,
+
+
+    Following our annual review of energy and freight costs, and in line with the terms of our supply agreement, the price charged by Supplier B for SKU-02 will be increased by 6% from week 49 (30 November) until further notice.
+
+
+    Kind regards,
+
+    Supplier B Billing'
+  evidence: the price charged by Supplier B for SKU-02 will be increased by 6% from week 49 (30 November) until further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0018
+  writer: W1
+  text: 'Hi,
+
+
+    Plant 2 will have 25% less capacity than normal in weeks 49 and 50 while we install the new furnace. Plant 1 is not affected.
+
+
+    Martin, Supplier A Planning'
+  evidence: Plant 2 will have 25% less capacity than normal in weeks 49 and 50
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-000-m0019
+  writer: W1
+  text: Hello all, the quality hold on Lot 7701 (SKU-01) from week 44 is now lifted. Tests came back fine, so the lot is released and can be used again from this week. Regards, Helen (QA)
+  evidence: the quality hold on Lot 7701 (SKU-01) from week 44 is now lifted
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-015-m0000
+  writer: W1
+  text: 'heads up: Port V lane (ex Plant 5) is running 5 days faster from this wk, new direct service. until further notice. carrier ops'
+  evidence: Port V lane (ex Plant 5) is running 5 days faster from this wk, new direct service. until further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-015-m0001
+  writer: W1
+  text: 'Supplier C portal update: Plant 5 will have 10% extra capacity available from 14 September to 11 October, thanks to an added weekend shift. Contact Lena in planning with any questions.'
+  evidence: Plant 5 will have 10% extra capacity available from 14 September to 11 October
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-015-m0002
+  writer: W1
+  text: 'Hello,
+
+
+    Our ref. MN-3391. Plant 4 will run 20% below normal capacity in weeks 39 and 40 because of planned maintenance on the main kiln. Please call me on ext. 418 if you need to discuss.
+
+
+    Regards,
+
+    Karin Holm, Supplier B Planning'
+  evidence: Plant 4 will run 20% below normal capacity in weeks 39 and 40
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-015-m0003
+  writer: W1
+  text: 'Correction to our notice of last week (ref. MN-3391): the capacity cut at Plant 4 for weeks 39 and 40 will be 15%, not 20% as we said. This replaces the earlier notice. Karin, Supplier B Planning'
+  evidence: the capacity cut at Plant 4 for weeks 39 and 40 will be 15%
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-015-m0004
+  writer: W1
+  text: 'Hi all,
+
+
+    Because one of our larger retail customers is running a one-week in-store promotion, and their buyer confirmed the extra quantities on yesterday''s call, customer orders for SKU-03 are expected to be 10% higher in week 39 only.
+
+
+    Thanks,
+
+    Raj, Sales Ops'
+  evidence: customer orders for SKU-03 are expected to be 10% higher in week 39 only
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-015-m0005
+  writer: W1
+  text: 'Ops desk, FYI: stock check on Lot 7703 done, 260 units of SKU-03 on hand, same as in the system. No action needed. Lucy'
+  evidence: ''
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-015-m0006
+  writer: W1
+  text: 'Dear colleagues,
+
+
+    Lot 7703 (SKU-03) has been placed on quality hold from this week until further notice, while we investigate a labelling issue. Stock of SKU-01 and SKU-04 is not affected.
+
+
+    Best regards,
+
+    Mark, Quality Assurance'
+  evidence: Lot 7703 (SKU-03) has been placed on quality hold from this week until further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-015-m0007
+  writer: W1
+  text: 'Weekly ops note: no delay expected at Port X this week. Everything is on plan.'
+  evidence: ''
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-015-m0008
+  writer: W1
+  text: Hi! Supplier A billing here. Good news, SKU-04 price goes down 2% from wk 44, until further notice. New invoices will show it. cheers, Tina
+  evidence: SKU-04 price goes down 2% from wk 44, until further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-015-m0009
+  writer: W1
+  text: 'Carrier ops notice: from 19 October, shipments from Plant 1 on the Port X lane will take 10 days longer than usual because of congestion at the port. This will continue until further notice.'
+  evidence: from 19 October, shipments from Plant 1 on the Port X lane will take 10 days longer than usual because of congestion at the port. This will continue until further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-015-m0010
+  writer: W1
+  text: 'Ops desk: 18 pallets of SKU-01 received from Plant 5 this week, all checked in, no discrepancies.'
+  evidence: ''
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-015-m0011
+  writer: W1
+  text: 'Hello,
+
+
+    Re: your order 4500127736. Please note that Plant 2 will run at 10% below normal capacity from week 47 through week 49, due to a staff training programme. You can reach me on ext. 3302 with any questions.
+
+
+    Kind regards,
+
+    Paul, Supplier A Planning'
+  evidence: Plant 2 will run at 10% below normal capacity from week 47 through week 49
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-015-m0012
+  writer: W1
+  text: No changes from the ops desk this week. SKU-03 order plan unchanged.
+  evidence: ''
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-015-m0013
+  writer: W1
+  text: 'Carrier ops update: owing to a revised routing that now calls at an additional hub port for transhipment, the transit time for shipments from Plant 2 on the Port Y lane will be extended by 5 days from week 47 until further notice.'
+  evidence: the transit time for shipments from Plant 2 on the Port Y lane will be extended by 5 days from week 47 until further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-015-m0014
+  writer: W1
+  text: 'Cycle count result for SKU-04: 1,140 units, matches the system. Nothing to update in the plan.'
+  evidence: ''
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-021-m0000
+  writer: W1
+  text: 'Hi team,
+
+
+    Plant 2 will be at 10% below normal capacity from week 39 to week 42 while one of the lines is refurbished. Nothing changes at Plant 1, which keeps running as normal.
+
+
+    Thanks,
+
+    Greta, Supplier A Planning'
+  evidence: Plant 2 will be at 10% below normal capacity from week 39 to week 42
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-021-m0001
+  writer: W1
+  text: quick heads up, SKU-01 orders up 10% next wk (wk38) only, customer doing a one-off restock. normal again wk39. Raj
+  evidence: SKU-01 orders up 10% next wk (wk38) only
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-021-m0002
+  writer: W1
+  text: 'Dear Sir/Madam,
+
+
+    Supplier A will raise its price for SKU-01 by 5% with effect from 28 September 2026. The new price will stay in place until further notice.
+
+
+    Yours faithfully,
+
+    Accounts, Supplier A'
+  evidence: Supplier A will raise its price for SKU-01 by 5% with effect from 28 September 2026. The new price will stay in place until further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-021-m0003
+  writer: W1
+  text: 'Hello,
+
+
+    Your account no. 100482. Supplier C''s price for SKU-01 is reduced by 2% from week 39 until further notice. Questions to the billing desk, ext. 5520.
+
+
+    Best,
+
+    Omar, Supplier C Billing'
+  evidence: Supplier C's price for SKU-01 is reduced by 2% from week 39 until further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-021-m0004
+  writer: W1
+  text: 'Hi all,
+
+
+    After a review of the latest customer forecasts with the key account team, and taking into account the slower season our main distributor has warned us about, customer orders for SKU-03 are expected to be 15% lower from week 41 through week 43.
+
+
+    Best,
+
+    Raj'
+  evidence: customer orders for SKU-03 are expected to be 15% lower from week 41 through week 43
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-021-m0005
+  writer: W1
+  text: 'Hello,
+
+
+    Following a failed audit, Supplier B is suspended with immediate effect and until further notice: please do not place any new orders with them. Supplier A and Supplier C are not affected.
+
+
+    Regards,
+
+    Procurement'
+  evidence: Supplier B is suspended with immediate effect and until further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-021-m0006
+  writer: W1
+  text: Hi all, quiet week at the ops desk. Order plan for SKU-02 unchanged, no delays to report. Lucy
+  evidence: ''
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-021-m0007
+  writer: W1
+  text: FYI Port Z lane (from Plant 3) is gonna be 7 days slower from wk41, til further notice. port's short on cranes. carrier ops
+  evidence: Port Z lane (from Plant 3) is gonna be 7 days slower from wk41, til further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-021-m0008
+  writer: W1
+  text: 'Notice from Supplier B: between 26 October and 15 November, Plant 4 will produce at 15% below its normal capacity due to equipment upgrades.'
+  evidence: between 26 October and 15 November, Plant 4 will produce at 15% below its normal capacity
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-021-m0009
+  writer: W1
+  text: 'Hi all,
+
+
+    We are withdrawing the suspension of Supplier B issued in week 39. Supplier B is reinstated with effect from this week, and orders can be placed normally again.
+
+
+    Thanks, Procurement'
+  evidence: Supplier B is reinstated with effect from this week
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-021-m0010
+  writer: W1
+  text: 'Hello,
+
+
+    Case no. 2026-118. Supplier C is suspended from today until further notice, and no new orders will be accepted. Contact: procurement desk, ext. 7731.'
+  evidence: Supplier C is suspended from today until further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-021-m0011
+  writer: W1
+  text: 'Quality notice: following a customer complaint about discolouration and the preliminary findings from the lab, which are still being reviewed, Lot 7703 (SKU-03) has been placed on quality hold with immediate effect until further notice.'
+  evidence: Lot 7703 (SKU-03) has been placed on quality hold with immediate effect until further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-021-m0012
+  writer: W1
+  text: 'Ops desk update: 6 trucks left Plant 2 this week as planned. No other news.'
+  evidence: ''
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-021-m0013
+  writer: W1
+  text: 'Hi all,
+
+
+    Following repeated quality issues, Supplier B is suspended again from this week until further notice, and no new orders should be placed with them. Supplier A is not affected; orders to Supplier A continue as normal.
+
+
+    Procurement'
+  evidence: Supplier B is suspended again from this week until further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-021-m0014
+  writer: W1
+  text: hey all, Plant 1 down 15% capacity wk48 thru wk50, maintenance shutdown on one line. back to normal after. Greta (Supp A)
+  evidence: Plant 1 down 15% capacity wk48 thru wk50
+  verified_by: V1
+  verified: true
+  notes: 'Supplier A is not named in full: the text only has the abbreviation ''Supp A'' in the sign-off. Everything else is correct: Plant 1, down 15%, week 48 through week 50, informal wording used.'
+- id: pilot-021-m0015
+  writer: W1
+  text: 'Hello,
+
+
+    The quality hold placed on Lot 7703 (SKU-03) in week 45 has been lifted. The lot is released from this week and can be used and shipped as normal.
+
+
+    Best regards, QA'
+  evidence: The quality hold placed on Lot 7703 (SKU-03) in week 45 has been lifted. The lot is released from this week
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-022-m0000
+  writer: W1
+  text: 'Supplier C: Plant 5 capacity will be reduced by 25% from 21 September to 4 October for a planned shutdown of the packing line. Normal capacity resumes after that.'
+  evidence: Plant 5 capacity will be reduced by 25% from 21 September to 4 October
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-022-m0001
+  writer: W1
+  text: 'Hi all, ops desk weekly: order plan for SKU-03 unchanged, nothing new to report. Ben'
+  evidence: ''
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-022-m0002
+  writer: W1
+  text: Hi, just confirming that 22 pallets of SKU-03 were collected from Plant 5 on Tuesday as booked. No other updates. Ben
+  evidence: ''
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-022-m0003
+  writer: W1
+  text: 'Ops desk: no delays expected at Port V this week, all bookings running to plan.'
+  evidence: ''
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-022-m0004
+  writer: W1
+  text: 'Hi planning,
+
+
+    Customer orders for SKU-03 will be 20% lower in week 48 only, as the customer is closed for stocktaking. Their account number is 30019, for reference.
+
+
+    Thanks, Mia, Sales Ops'
+  evidence: Customer orders for SKU-03 will be 20% lower in week 48 only
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-022-m0005
+  writer: W1
+  text: 'Dear all,
+
+
+    Following the findings of the compliance audit carried out at their main site last month, and pending a corrective action plan, Supplier A has been suspended with immediate effect until further notice, meaning no new orders will be accepted.
+
+
+    Procurement'
+  evidence: Supplier A has been suspended with immediate effect until further notice
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-022-m0006
+  writer: W1
+  text: 'Hi,
+
+
+    Plant 5 will run at 10% below normal capacity in weeks 49 and 50 for boiler maintenance. Transit on the Port V lane is not affected.
+
+
+    Best, Lena, Supplier C Planning'
+  evidence: Plant 5 will run at 10% below normal capacity in weeks 49 and 50
+  verified_by: V1
+  verified: true
+  notes: ''
+- id: pilot-022-m0007
+  writer: W1
+  text: Hello all, the suspension of Supplier A from week 47 has ended. Supplier A has completed its corrective actions and is active again from this week; orders are accepted as normal. Regards, Procurement
+  evidence: Supplier A has completed its corrective actions and is active again from this week
+  verified_by: V1
+  verified: true
+  notes: ''

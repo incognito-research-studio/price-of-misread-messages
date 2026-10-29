@@ -1,0 +1,35 @@
+# ICORES revision (2026-10-24): the no-update baseline. The planner ignores every message and
+# plans on the first week's master data; it learns of a suspension only from a refused order.
+# Single repairs price each gold delta as the value of reading that message alone.
+#   cdd -v run --config configs/experiments/icores-no-update.yaml --run-name icores-final-no-update-para
+name: icores-no-update
+streams: data/v2/pilot-para
+output_dir: runs
+seed: 0
+demand_cv: 0.2
+sop: configs/sop/sop-v2.yaml
+approver: magnitude_cap
+approver_cap: 0.5
+hindsight_time_limit: 60
+benchmark: planner         # x* = this solver on the oracle state (see the CHANGELOG)
+tuned_safety_factors: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5]   # the tune-solver grid
+reply_cache: runs/cache/replies.sqlite
+
+solver:
+  horizon: 6
+  time_limit: 10
+  # Pre-registered 2026-10-23: `cdd tune-solver` on data/v2/dev (24 template streams), grid
+  # 0-0.5; best 0.3 (mean oracle cost 84,967 against 108,745 at 0). Do not change it after
+  # any pilot run.
+  safety_factor: 0.3
+
+attribution:
+  single_repair: true          # replays parsed deltas; no extra model calls
+  shapley_permutations: 0
+
+conditions:
+  - name: oracle
+    interpreter: oracle
+
+  - name: no-update
+    interpreter: none

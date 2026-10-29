@@ -1,0 +1,62 @@
+# Model deciders against the compiled pipeline, with local models. Start `ollama serve`, then:
+#   cdd -v run --config configs/experiments/local-deciders.yaml --streams data/v2/pilot-para
+#
+# qwen-e2e reads the raw message stream and returns orders (condition a). The other two order
+# from the oracle state (condition i): qwen-llm-over-oracle-state writes JSON orders, the main
+# "model decides from the state" condition; qwen-decides-over-oracle-state picks an order bucket
+# per supply line by typed questions. All three are told the objective and the costs; qwen-e2e
+# also gets the master data as of the first week. Every order schema allows only real supply
+# lines. Under the planner benchmark, each condition's decision regret is its extra cost over the
+# solver deciding from the same oracle state (the oracle condition).
+name: local-deciders
+streams: data/v2/pilot-para
+output_dir: runs
+seed: 0
+demand_cv: 0.2
+sop: configs/sop/sop-v2.yaml
+approver: magnitude_cap
+approver_cap: 0.5
+hindsight_time_limit: 60
+benchmark: planner         # x* = this solver on the oracle state (see the CHANGELOG)
+tuned_safety_factors: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5]   # the tune-solver grid
+reply_cache: runs/cache/replies.sqlite
+
+solver:
+  horizon: 6
+  time_limit: 10
+  # Pre-registered 2026-10-23: `cdd tune-solver` on data/v2/dev (24 template streams), grid
+  # 0-0.5; best 0.3 (mean oracle cost 84,967 against 108,745 at 0). Do not change it after
+  # any pilot run.
+  safety_factor: 0.3
+
+attribution:
+  single_repair: true
+  shapley_permutations: 0
+
+conditions:
+  - name: oracle
+    interpreter: oracle
+
+  # (a) end-to-end decider: reads the raw stream and returns orders
+  - name: qwen-e2e
+    interpreter: null
+    decider: llm_stream
+    constrained: true
+    context: full
+    client: cdd.adapters.ollama:make_client
+    client_args: &qwen {model: "qwen2.5:7b-instruct", temperature: 0, seed: 0}
+
+  # (i) the model writes orders from the compiled oracle state
+  - name: qwen-llm-over-oracle-state
+    interpreter: oracle
+    decider: llm_state
+    constrained: true
+    client: cdd.adapters.ollama:make_client
+    client_args: *qwen
+
+  # (i), typed variant: one order bucket (steps of 25 units) per supply line
+  - name: qwen-decides-over-oracle-state
+    interpreter: oracle
+    decider: typed_state
+    client: cdd.adapters.ollama:make_client
+    client_args: *qwen

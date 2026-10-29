@@ -1,0 +1,2611 @@
+{
+  "streams": 24,
+  "oracle_rejected": 0,
+  "oracle_unapproved": 0,
+  "oracle_conflicts_dropped": 0,
+  "mean_oracle_cost": 81526.77361014475,
+  "mean_value_of_perfect_information": 13449.06577071709,
+  "by_type": {
+    "capacity_change": {
+      "misses": 80,
+      "costly_share": 0.025,
+      "free_share": 0.975,
+      "mean_delta_c": 5.884333386500112,
+      "share_of_cost": 0.001097122734217626
+    },
+    "demand_signal": {
+      "misses": 61,
+      "costly_share": 0.3770491803278688,
+      "free_share": 0.03278688524590164,
+      "mean_delta_c": 273.95782557918943,
+      "share_of_cost": 0.060191003896817925
+    },
+    "lead_time_change": {
+      "misses": 71,
+      "costly_share": 0.4507042253521127,
+      "free_share": 0.39436619718309857,
+      "mean_delta_c": 3085.33971587115,
+      "share_of_cost": 0.5189111095072741
+    },
+    "price_change": {
+      "misses": 44,
+      "costly_share": 0.06818181818181818,
+      "free_share": 0.8409090909090909,
+      "mean_delta_c": 6.000533726346145,
+      "share_of_cost": 0.0015450356585086575
+    },
+    "quality_hold": {
+      "misses": 55,
+      "costly_share": 0.03636363636363636,
+      "free_share": 0.9272727272727272,
+      "mean_delta_c": 24.08658648990915,
+      "share_of_cost": 0.003244894096834601
+    },
+    "quality_release": {
+      "misses": 41,
+      "costly_share": 0.0,
+      "free_share": 0.9024390243902439,
+      "mean_delta_c": 1.4759807056096446,
+      "share_of_cost": 0.00014157996132871232
+    },
+    "supplier_status": {
+      "misses": 33,
+      "costly_share": 0.5757575757575758,
+      "free_share": 0.2727272727272727,
+      "mean_delta_c": 5361.0074316417995,
+      "share_of_cost": 0.41486925414501846
+    }
+  },
+  "results": [
+    {
+      "stream": "pilot-000",
+      "oracle_cost": 81433.28049284534,
+      "hindsight_cost": 74896.20318518739,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-000",
+          "delta": "pilot-000-m0000#g0",
+          "type": "quality_hold",
+          "delta_c": 862.81003392188
+        },
+        {
+          "stream": "pilot-000",
+          "delta": "pilot-000-m0001#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-000",
+          "delta": "pilot-000-m0003#g0",
+          "type": "demand_signal",
+          "delta_c": -32.17500000001746
+        },
+        {
+          "stream": "pilot-000",
+          "delta": "pilot-000-m0004#g0",
+          "type": "lead_time_change",
+          "delta_c": -751.1087979930307
+        },
+        {
+          "stream": "pilot-000",
+          "delta": "pilot-000-m0006#g0",
+          "type": "quality_release",
+          "delta_c": 21.75
+        },
+        {
+          "stream": "pilot-000",
+          "delta": "pilot-000-m0007#g0",
+          "type": "supplier_status",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-000",
+          "delta": "pilot-000-m0008#g0",
+          "type": "demand_signal",
+          "delta_c": 130.48199999998906
+        },
+        {
+          "stream": "pilot-000",
+          "delta": "pilot-000-m0010#g0",
+          "type": "supplier_status",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-000",
+          "delta": "pilot-000-m0011#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-000",
+          "delta": "pilot-000-m0013#g0",
+          "type": "lead_time_change",
+          "delta_c": -803.6506906130235
+        },
+        {
+          "stream": "pilot-000",
+          "delta": "pilot-000-m0014#g0",
+          "type": "capacity_change",
+          "delta_c": 288.8184565200063
+        },
+        {
+          "stream": "pilot-000",
+          "delta": "pilot-000-m0015#g0",
+          "type": "supplier_status",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-000",
+          "delta": "pilot-000-m0016#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-000",
+          "delta": "pilot-000-m0017#g0",
+          "type": "lead_time_change",
+          "delta_c": -372.16755627762177
+        },
+        {
+          "stream": "pilot-000",
+          "delta": "pilot-000-m0018#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-001",
+      "oracle_cost": 78509.54326661394,
+      "hindsight_cost": 59770.57631827346,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0001#g0",
+          "type": "supplier_status",
+          "delta_c": 4.250855415535625
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0002#g0",
+          "type": "lead_time_change",
+          "delta_c": 4826.1330973489385
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0003#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0004#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0005#g0",
+          "type": "supplier_status",
+          "delta_c": 73816.38667058398
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0006#g0",
+          "type": "supplier_status",
+          "delta_c": 5875.2195749999955
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0007#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0008#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0009#g0",
+          "type": "demand_signal",
+          "delta_c": 1775.6240474607912
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0010#g0",
+          "type": "demand_signal",
+          "delta_c": 100.31999999999243
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0011#g0",
+          "type": "demand_signal",
+          "delta_c": -408.34949100000085
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0013#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0014#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0015#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0017#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0018#g0",
+          "type": "supplier_status",
+          "delta_c": 3064.902658590683
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0019#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0020#g0",
+          "type": "supplier_status",
+          "delta_c": 5760.120891952596
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0021#g0",
+          "type": "supplier_status",
+          "delta_c": -169.77236099999573
+        },
+        {
+          "stream": "pilot-001",
+          "delta": "pilot-001-m0023#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-002",
+      "oracle_cost": 85563.15347473614,
+      "hindsight_cost": 78346.47914323345,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-002",
+          "delta": "pilot-002-m0001#g0",
+          "type": "price_change",
+          "delta_c": 124.00173823999648
+        },
+        {
+          "stream": "pilot-002",
+          "delta": "pilot-002-m0003#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-002",
+          "delta": "pilot-002-m0004#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-002",
+          "delta": "pilot-002-m0005#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-002",
+          "delta": "pilot-002-m0006#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-002",
+          "delta": "pilot-002-m0007#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-002",
+          "delta": "pilot-002-m0008#g0",
+          "type": "supplier_status",
+          "delta_c": 1698.9355160371633
+        },
+        {
+          "stream": "pilot-002",
+          "delta": "pilot-002-m0009#g0",
+          "type": "demand_signal",
+          "delta_c": -6.835150800005067
+        },
+        {
+          "stream": "pilot-002",
+          "delta": "pilot-002-m0011#g0",
+          "type": "lead_time_change",
+          "delta_c": 6917.779410875577
+        },
+        {
+          "stream": "pilot-002",
+          "delta": "pilot-002-m0013#g0",
+          "type": "supplier_status",
+          "delta_c": 2799.049257691193
+        },
+        {
+          "stream": "pilot-002",
+          "delta": "pilot-002-m0015#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-002",
+          "delta": "pilot-002-m0016#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-002",
+          "delta": "pilot-002-m0017#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-002",
+          "delta": "pilot-002-m0018#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-003",
+      "oracle_cost": 107100.41901780621,
+      "hindsight_cost": 86774.57481672135,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0000#g0",
+          "type": "supplier_status",
+          "delta_c": 6386.409888271402
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0001#g0",
+          "type": "supplier_status",
+          "delta_c": 4091.4116233531386
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0002#g0",
+          "type": "supplier_status",
+          "delta_c": 51631.89062401294
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0003#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0004#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0006#g0",
+          "type": "demand_signal",
+          "delta_c": 465.0428899104445
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0007#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0009#g0",
+          "type": "supplier_status",
+          "delta_c": 373.438957040009
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0010#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0012#g0",
+          "type": "supplier_status",
+          "delta_c": 953.1718600200547
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0013#g0",
+          "type": "lead_time_change",
+          "delta_c": 14736.582854878128
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0014#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0015#g0",
+          "type": "supplier_status",
+          "delta_c": -395.8992806899769
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0016#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0018#g0",
+          "type": "lead_time_change",
+          "delta_c": -59.72872901998926
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0019#g0",
+          "type": "demand_signal",
+          "delta_c": 758.2410000000091
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0021#g0",
+          "type": "lead_time_change",
+          "delta_c": 3276.6198761945416
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0022#g0",
+          "type": "demand_signal",
+          "delta_c": 4.926602624182124
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0023#g0",
+          "type": "demand_signal",
+          "delta_c": -364.3199999999779
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0024#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0025#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0026#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-003",
+          "delta": "pilot-003-m0028#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-004",
+      "oracle_cost": 69284.8128879354,
+      "hindsight_cost": 63974.871112754525,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-004",
+          "delta": "pilot-004-m0000#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-004",
+          "delta": "pilot-004-m0001#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-004",
+          "delta": "pilot-004-m0002#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-004",
+          "delta": "pilot-004-m0004#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-004",
+          "delta": "pilot-004-m0005#g0",
+          "type": "price_change",
+          "delta_c": -3.4561590000084834
+        },
+        {
+          "stream": "pilot-004",
+          "delta": "pilot-004-m0006#g0",
+          "type": "demand_signal",
+          "delta_c": 16.236527999993996
+        },
+        {
+          "stream": "pilot-004",
+          "delta": "pilot-004-m0008#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-004",
+          "delta": "pilot-004-m0010#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-004",
+          "delta": "pilot-004-m0011#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-004",
+          "delta": "pilot-004-m0013#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-004",
+          "delta": "pilot-004-m0014#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-004",
+          "delta": "pilot-004-m0015#g0",
+          "type": "demand_signal",
+          "delta_c": 410.84999999999127
+        },
+        {
+          "stream": "pilot-004",
+          "delta": "pilot-004-m0016#g0",
+          "type": "demand_signal",
+          "delta_c": -178.0350000000035
+        }
+      ]
+    },
+    {
+      "stream": "pilot-005",
+      "oracle_cost": 71345.15964464848,
+      "hindsight_cost": 63299.56193604344,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0000#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0001#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0002#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0004#g0",
+          "type": "lead_time_change",
+          "delta_c": -34.201367999994545
+        },
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0005#g0",
+          "type": "demand_signal",
+          "delta_c": 44.48399999999674
+        },
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0006#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0008#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0009#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0011#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0012#g0",
+          "type": "lead_time_change",
+          "delta_c": 5.454272000002675
+        },
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0013#g0",
+          "type": "demand_signal",
+          "delta_c": 986.7545198000735
+        },
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0015#g0",
+          "type": "demand_signal",
+          "delta_c": -31.944000000003143
+        },
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0016#g0",
+          "type": "demand_signal",
+          "delta_c": -594.1584000000148
+        },
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0017#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0018#g0",
+          "type": "demand_signal",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0019#g0",
+          "type": "demand_signal",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-005",
+          "delta": "pilot-005-m0021#g0",
+          "type": "supplier_status",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-006",
+      "oracle_cost": 71794.88707318362,
+      "hindsight_cost": 65428.93614042346,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0000#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0002#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0003#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0004#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0005#g0",
+          "type": "lead_time_change",
+          "delta_c": 1920.7848864901607
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0006#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0007#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0009#g0",
+          "type": "demand_signal",
+          "delta_c": -17.73750000000291
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0011#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0012#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0013#g0",
+          "type": "price_change",
+          "delta_c": 175.20241585523763
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0014#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0015#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0016#g0",
+          "type": "lead_time_change",
+          "delta_c": 3361.8585363687744
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0018#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0019#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0021#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0022#g0",
+          "type": "price_change",
+          "delta_c": 94.4131301479938
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0023#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0025#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0026#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0027#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0028#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-006",
+          "delta": "pilot-006-m0030#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-007",
+      "oracle_cost": 50008.889617928624,
+      "hindsight_cost": 43393.004093270974,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-007",
+          "delta": "pilot-007-m0000#g0",
+          "type": "quality_hold",
+          "delta_c": -64.14738249999937
+        },
+        {
+          "stream": "pilot-007",
+          "delta": "pilot-007-m0001#g0",
+          "type": "quality_release",
+          "delta_c": -0.23304957000073045
+        },
+        {
+          "stream": "pilot-007",
+          "delta": "pilot-007-m0002#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-007",
+          "delta": "pilot-007-m0004#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-007",
+          "delta": "pilot-007-m0006#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-007",
+          "delta": "pilot-007-m0007#g0",
+          "type": "lead_time_change",
+          "delta_c": -1216.7162002600016
+        },
+        {
+          "stream": "pilot-007",
+          "delta": "pilot-007-m0008#g0",
+          "type": "demand_signal",
+          "delta_c": 87.45000000000437
+        },
+        {
+          "stream": "pilot-007",
+          "delta": "pilot-007-m0009#g0",
+          "type": "lead_time_change",
+          "delta_c": 15398.281098574531
+        },
+        {
+          "stream": "pilot-007",
+          "delta": "pilot-007-m0010#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-007",
+          "delta": "pilot-007-m0012#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-007",
+          "delta": "pilot-007-m0013#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-008",
+      "oracle_cost": 69083.4067319444,
+      "hindsight_cost": 61444.36435559731,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-008",
+          "delta": "pilot-008-m0001#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-008",
+          "delta": "pilot-008-m0002#g0",
+          "type": "demand_signal",
+          "delta_c": -244.14121086489467
+        },
+        {
+          "stream": "pilot-008",
+          "delta": "pilot-008-m0003#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-008",
+          "delta": "pilot-008-m0004#g0",
+          "type": "supplier_status",
+          "delta_c": 2280.388259331914
+        },
+        {
+          "stream": "pilot-008",
+          "delta": "pilot-008-m0005#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-008",
+          "delta": "pilot-008-m0006#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-008",
+          "delta": "pilot-008-m0007#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-008",
+          "delta": "pilot-008-m0008#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-008",
+          "delta": "pilot-008-m0009#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-008",
+          "delta": "pilot-008-m0011#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-008",
+          "delta": "pilot-008-m0012#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-008",
+          "delta": "pilot-008-m0013#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-008",
+          "delta": "pilot-008-m0014#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-009",
+      "oracle_cost": 91228.74287496749,
+      "hindsight_cost": 81568.86883984896,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-009",
+          "delta": "pilot-009-m0000#g0",
+          "type": "quality_hold",
+          "delta_c": -3.389549999992596
+        },
+        {
+          "stream": "pilot-009",
+          "delta": "pilot-009-m0001#g0",
+          "type": "quality_release",
+          "delta_c": 2.1583284999942407
+        },
+        {
+          "stream": "pilot-009",
+          "delta": "pilot-009-m0002#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-009",
+          "delta": "pilot-009-m0003#g0",
+          "type": "demand_signal",
+          "delta_c": 112.28877850000572
+        },
+        {
+          "stream": "pilot-009",
+          "delta": "pilot-009-m0004#g0",
+          "type": "price_change",
+          "delta_c": 30.364998999997624
+        },
+        {
+          "stream": "pilot-009",
+          "delta": "pilot-009-m0005#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-009",
+          "delta": "pilot-009-m0006#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-009",
+          "delta": "pilot-009-m0007#g0",
+          "type": "lead_time_change",
+          "delta_c": 18195.951991676702
+        },
+        {
+          "stream": "pilot-009",
+          "delta": "pilot-009-m0010#g0",
+          "type": "lead_time_change",
+          "delta_c": 2081.052347214616
+        },
+        {
+          "stream": "pilot-009",
+          "delta": "pilot-009-m0011#g0",
+          "type": "lead_time_change",
+          "delta_c": -197.9336559999938
+        },
+        {
+          "stream": "pilot-009",
+          "delta": "pilot-009-m0012#g0",
+          "type": "demand_signal",
+          "delta_c": 408.529741670005
+        },
+        {
+          "stream": "pilot-009",
+          "delta": "pilot-009-m0014#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-010",
+      "oracle_cost": 153276.1811005539,
+      "hindsight_cost": 70155.56030328583,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0000#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0001#g0",
+          "type": "demand_signal",
+          "delta_c": 3812.680857899919
+        },
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0003#g0",
+          "type": "supplier_status",
+          "delta_c": 2580.8224489207787
+        },
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0004#g0",
+          "type": "supplier_status",
+          "delta_c": 2600.796670420794
+        },
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0006#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0007#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0008#g0",
+          "type": "lead_time_change",
+          "delta_c": 214.21889156277757
+        },
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0009#g0",
+          "type": "supplier_status",
+          "delta_c": 1861.5522700400034
+        },
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0010#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0011#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0014#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0015#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0016#g0",
+          "type": "price_change",
+          "delta_c": 238.952108700003
+        },
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0018#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0019#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0020#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-010",
+          "delta": "pilot-010-m0023#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-011",
+      "oracle_cost": 63859.9618560528,
+      "hindsight_cost": 58393.65170310799,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-011",
+          "delta": "pilot-011-m0000#g0",
+          "type": "lead_time_change",
+          "delta_c": 11701.833971320593
+        },
+        {
+          "stream": "pilot-011",
+          "delta": "pilot-011-m0001#g0",
+          "type": "demand_signal",
+          "delta_c": -382.07325912568194
+        },
+        {
+          "stream": "pilot-011",
+          "delta": "pilot-011-m0003#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-011",
+          "delta": "pilot-011-m0004#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-011",
+          "delta": "pilot-011-m0005#g0",
+          "type": "lead_time_change",
+          "delta_c": 351.2277860312315
+        },
+        {
+          "stream": "pilot-011",
+          "delta": "pilot-011-m0006#g0",
+          "type": "lead_time_change",
+          "delta_c": 3157.103080575136
+        },
+        {
+          "stream": "pilot-011",
+          "delta": "pilot-011-m0007#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-011",
+          "delta": "pilot-011-m0008#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-011",
+          "delta": "pilot-011-m0010#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-011",
+          "delta": "pilot-011-m0012#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-011",
+          "delta": "pilot-011-m0013#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-011",
+          "delta": "pilot-011-m0016#g0",
+          "type": "demand_signal",
+          "delta_c": 254.9184000000023
+        },
+        {
+          "stream": "pilot-011",
+          "delta": "pilot-011-m0017#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-011",
+          "delta": "pilot-011-m0019#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-012",
+      "oracle_cost": 67486.6866395393,
+      "hindsight_cost": 59393.51764256241,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-012",
+          "delta": "pilot-012-m0000#g0",
+          "type": "demand_signal",
+          "delta_c": -591.1103165000095
+        },
+        {
+          "stream": "pilot-012",
+          "delta": "pilot-012-m0002#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-012",
+          "delta": "pilot-012-m0004#g0",
+          "type": "demand_signal",
+          "delta_c": 66.45463099998597
+        },
+        {
+          "stream": "pilot-012",
+          "delta": "pilot-012-m0005#g0",
+          "type": "lead_time_change",
+          "delta_c": 23680.267812146354
+        },
+        {
+          "stream": "pilot-012",
+          "delta": "pilot-012-m0007#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-012",
+          "delta": "pilot-012-m0008#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-012",
+          "delta": "pilot-012-m0009#g0",
+          "type": "demand_signal",
+          "delta_c": -27.67050000000745
+        },
+        {
+          "stream": "pilot-012",
+          "delta": "pilot-012-m0010#g0",
+          "type": "demand_signal",
+          "delta_c": 222.97703578336223
+        },
+        {
+          "stream": "pilot-012",
+          "delta": "pilot-012-m0011#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-012",
+          "delta": "pilot-012-m0012#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-012",
+          "delta": "pilot-012-m0013#g0",
+          "type": "demand_signal",
+          "delta_c": -1126.6099297894834
+        },
+        {
+          "stream": "pilot-012",
+          "delta": "pilot-012-m0014#g0",
+          "type": "demand_signal",
+          "delta_c": -431.65980000000854
+        },
+        {
+          "stream": "pilot-012",
+          "delta": "pilot-012-m0015#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-012",
+          "delta": "pilot-012-m0016#g0",
+          "type": "demand_signal",
+          "delta_c": 1468.9223999999958
+        },
+        {
+          "stream": "pilot-012",
+          "delta": "pilot-012-m0018#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-013",
+      "oracle_cost": 59544.39595228074,
+      "hindsight_cost": 52391.32219925397,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0000#g0",
+          "type": "demand_signal",
+          "delta_c": -7.836999899998773
+        },
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0001#g0",
+          "type": "demand_signal",
+          "delta_c": 47.799911000001885
+        },
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0003#g0",
+          "type": "demand_signal",
+          "delta_c": 34.996500000001106
+        },
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0004#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0005#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0006#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0007#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0008#g0",
+          "type": "lead_time_change",
+          "delta_c": 1181.6010643896152
+        },
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0009#g0",
+          "type": "lead_time_change",
+          "delta_c": 1897.0361055280664
+        },
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0010#g0",
+          "type": "lead_time_change",
+          "delta_c": 1181.6010643896152
+        },
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0012#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0013#g0",
+          "type": "demand_signal",
+          "delta_c": -227.16540000000532
+        },
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0014#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0016#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0017#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0018#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-013",
+          "delta": "pilot-013-m0021#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-014",
+      "oracle_cost": 94759.6532099276,
+      "hindsight_cost": 87293.8856288012,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-014",
+          "delta": "pilot-014-m0000#g0",
+          "type": "lead_time_change",
+          "delta_c": 979.5337783635041
+        },
+        {
+          "stream": "pilot-014",
+          "delta": "pilot-014-m0001#g0",
+          "type": "capacity_change",
+          "delta_c": 181.92821440000262
+        },
+        {
+          "stream": "pilot-014",
+          "delta": "pilot-014-m0002#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-014",
+          "delta": "pilot-014-m0003#g0",
+          "type": "lead_time_change",
+          "delta_c": 3799.794541884243
+        },
+        {
+          "stream": "pilot-014",
+          "delta": "pilot-014-m0005#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-014",
+          "delta": "pilot-014-m0006#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-014",
+          "delta": "pilot-014-m0007#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-014",
+          "delta": "pilot-014-m0008#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-014",
+          "delta": "pilot-014-m0011#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-014",
+          "delta": "pilot-014-m0012#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-014",
+          "delta": "pilot-014-m0014#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-014",
+          "delta": "pilot-014-m0015#g0",
+          "type": "demand_signal",
+          "delta_c": -166.22099999999045
+        },
+        {
+          "stream": "pilot-014",
+          "delta": "pilot-014-m0016#g0",
+          "type": "demand_signal",
+          "delta_c": -78.03012279998802
+        },
+        {
+          "stream": "pilot-014",
+          "delta": "pilot-014-m0017#g0",
+          "type": "lead_time_change",
+          "delta_c": 82.94018039999355
+        }
+      ]
+    },
+    {
+      "stream": "pilot-015",
+      "oracle_cost": 71600.11163090849,
+      "hindsight_cost": 64261.29104737645,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-015",
+          "delta": "pilot-015-m0000#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-015",
+          "delta": "pilot-015-m0002#g0",
+          "type": "lead_time_change",
+          "delta_c": 4531.135692170588
+        },
+        {
+          "stream": "pilot-015",
+          "delta": "pilot-015-m0003#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-015",
+          "delta": "pilot-015-m0005#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-015",
+          "delta": "pilot-015-m0006#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-015",
+          "delta": "pilot-015-m0007#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-015",
+          "delta": "pilot-015-m0008#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-015",
+          "delta": "pilot-015-m0010#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-015",
+          "delta": "pilot-015-m0011#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-015",
+          "delta": "pilot-015-m0013#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-015",
+          "delta": "pilot-015-m0014#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-015",
+          "delta": "pilot-015-m0015#g0",
+          "type": "lead_time_change",
+          "delta_c": -3.101811499989708
+        },
+        {
+          "stream": "pilot-015",
+          "delta": "pilot-015-m0017#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-015",
+          "delta": "pilot-015-m0018#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-016",
+      "oracle_cost": 74345.51657132163,
+      "hindsight_cost": 63506.78655472114,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0000#g0",
+          "type": "demand_signal",
+          "delta_c": -537.7624999999971
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0003#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0004#g0",
+          "type": "lead_time_change",
+          "delta_c": 1646.1688736327487
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0005#g0",
+          "type": "lead_time_change",
+          "delta_c": 1130.5307186524442
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0006#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0007#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0008#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0009#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0010#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0011#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0012#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0014#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0015#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0016#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0017#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0018#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0019#g0",
+          "type": "demand_signal",
+          "delta_c": 49.15957705328765
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0020#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0022#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-016",
+          "delta": "pilot-016-m0023#g0",
+          "type": "demand_signal",
+          "delta_c": -289.1911347141868
+        }
+      ]
+    },
+    {
+      "stream": "pilot-017",
+      "oracle_cost": 94054.36000743958,
+      "hindsight_cost": 80863.71203952395,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0000#g0",
+          "type": "demand_signal",
+          "delta_c": 361.8208000000013
+        },
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0002#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0004#g0",
+          "type": "supplier_status",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0005#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0007#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0008#g0",
+          "type": "demand_signal",
+          "delta_c": -3036.539907205093
+        },
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0009#g0",
+          "type": "supplier_status",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0010#g0",
+          "type": "demand_signal",
+          "delta_c": 1625.8890388185537
+        },
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0011#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0013#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0014#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0016#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0017#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0018#g0",
+          "type": "supplier_status",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0019#g0",
+          "type": "price_change",
+          "delta_c": -395.4547489839897
+        },
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0020#g0",
+          "type": "lead_time_change",
+          "delta_c": 1907.7951042531058
+        },
+        {
+          "stream": "pilot-017",
+          "delta": "pilot-017-m0021#g0",
+          "type": "supplier_status",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-018",
+      "oracle_cost": 69208.05426740689,
+      "hindsight_cost": 57364.476591539744,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-018",
+          "delta": "pilot-018-m0000#g0",
+          "type": "lead_time_change",
+          "delta_c": 7481.345706388558
+        },
+        {
+          "stream": "pilot-018",
+          "delta": "pilot-018-m0001#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-018",
+          "delta": "pilot-018-m0003#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-018",
+          "delta": "pilot-018-m0004#g0",
+          "type": "lead_time_change",
+          "delta_c": 3835.0480199797166
+        },
+        {
+          "stream": "pilot-018",
+          "delta": "pilot-018-m0006#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-018",
+          "delta": "pilot-018-m0007#g0",
+          "type": "demand_signal",
+          "delta_c": -42.6359999999986
+        },
+        {
+          "stream": "pilot-018",
+          "delta": "pilot-018-m0008#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-018",
+          "delta": "pilot-018-m0009#g0",
+          "type": "demand_signal",
+          "delta_c": 1703.6051690342865
+        },
+        {
+          "stream": "pilot-018",
+          "delta": "pilot-018-m0010#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-018",
+          "delta": "pilot-018-m0011#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-019",
+      "oracle_cost": 78304.10236846196,
+      "hindsight_cost": 71149.3303091255,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-019",
+          "delta": "pilot-019-m0000#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-019",
+          "delta": "pilot-019-m0001#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-019",
+          "delta": "pilot-019-m0002#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-019",
+          "delta": "pilot-019-m0003#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-019",
+          "delta": "pilot-019-m0006#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-019",
+          "delta": "pilot-019-m0007#g0",
+          "type": "demand_signal",
+          "delta_c": 77.40651600000274
+        },
+        {
+          "stream": "pilot-019",
+          "delta": "pilot-019-m0009#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-019",
+          "delta": "pilot-019-m0010#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-019",
+          "delta": "pilot-019-m0011#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-019",
+          "delta": "pilot-019-m0012#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-019",
+          "delta": "pilot-019-m0013#g0",
+          "type": "demand_signal",
+          "delta_c": 2223.3727679921576
+        },
+        {
+          "stream": "pilot-019",
+          "delta": "pilot-019-m0014#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-019",
+          "delta": "pilot-019-m0015#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-020",
+      "oracle_cost": 94437.12132134946,
+      "hindsight_cost": 84141.03262225898,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0000#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0001#g0",
+          "type": "lead_time_change",
+          "delta_c": -153.4567645000061
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0002#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0003#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0006#g0",
+          "type": "demand_signal",
+          "delta_c": -219.01786844102025
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0008#g0",
+          "type": "lead_time_change",
+          "delta_c": 18119.344052745917
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0009#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0010#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0012#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0013#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0014#g0",
+          "type": "demand_signal",
+          "delta_c": 2401.127014771133
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0015#g0",
+          "type": "demand_signal",
+          "delta_c": 1066.9296000000031
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0016#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0017#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0018#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0019#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0020#g0",
+          "type": "demand_signal",
+          "delta_c": 816.9611999999906
+        },
+        {
+          "stream": "pilot-020",
+          "delta": "pilot-020-m0021#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-021",
+      "oracle_cost": 94995.06250691097,
+      "hindsight_cost": 55839.267642118524,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-021",
+          "delta": "pilot-021-m0002#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-021",
+          "delta": "pilot-021-m0003#g0",
+          "type": "lead_time_change",
+          "delta_c": 10405.38045971957
+        },
+        {
+          "stream": "pilot-021",
+          "delta": "pilot-021-m0005#g0",
+          "type": "lead_time_change",
+          "delta_c": 8704.77138367499
+        },
+        {
+          "stream": "pilot-021",
+          "delta": "pilot-021-m0007#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-021",
+          "delta": "pilot-021-m0008#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-021",
+          "delta": "pilot-021-m0009#g0",
+          "type": "demand_signal",
+          "delta_c": 79.95982499998354
+        },
+        {
+          "stream": "pilot-021",
+          "delta": "pilot-021-m0010#g0",
+          "type": "demand_signal",
+          "delta_c": -41.19142499999725
+        },
+        {
+          "stream": "pilot-021",
+          "delta": "pilot-021-m0011#g0",
+          "type": "supplier_status",
+          "delta_c": 816.684649999981
+        },
+        {
+          "stream": "pilot-021",
+          "delta": "pilot-021-m0013#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-021",
+          "delta": "pilot-021-m0014#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-021",
+          "delta": "pilot-021-m0015#g0",
+          "type": "supplier_status",
+          "delta_c": 9852.690474781411
+        },
+        {
+          "stream": "pilot-021",
+          "delta": "pilot-021-m0016#g0",
+          "type": "supplier_status",
+          "delta_c": 1249.57177454661
+        },
+        {
+          "stream": "pilot-021",
+          "delta": "pilot-021-m0017#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-022",
+      "oracle_cost": 73763.85618000546,
+      "hindsight_cost": 63364.48103436331,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0000#g0",
+          "type": "demand_signal",
+          "delta_c": -32.54624999999942
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0001#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0002#g0",
+          "type": "quality_hold",
+          "delta_c": 529.4891555231152
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0003#g0",
+          "type": "supplier_status",
+          "delta_c": 246.14507057915034
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0004#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0005#g0",
+          "type": "quality_release",
+          "delta_c": 36.839930000001914
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0006#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0008#g0",
+          "type": "supplier_status",
+          "delta_c": -530.629507410471
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0009#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0011#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0012#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0013#g0",
+          "type": "lead_time_change",
+          "delta_c": 362.37547550893214
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0014#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0015#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0016#g0",
+          "type": "lead_time_change",
+          "delta_c": 5098.06598609942
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0017#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0018#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0019#g0",
+          "type": "demand_signal",
+          "delta_c": 750.8011304835672
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0020#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0021#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0022#g0",
+          "type": "supplier_status",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-022",
+          "delta": "pilot-022-m0024#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        }
+      ]
+    },
+    {
+      "stream": "pilot-023",
+      "oracle_cost": 91655.20794870546,
+      "hindsight_cost": 86849.23288687038,
+      "rejected": 0,
+      "unapproved": 0,
+      "conflicts_dropped": 0,
+      "misses": [
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0000#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0001#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0002#g0",
+          "type": "lead_time_change",
+          "delta_c": 3122.0331000000006
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0003#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0004#g0",
+          "type": "demand_signal",
+          "delta_c": 13.529999999998836
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0005#g0",
+          "type": "quality_hold",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0006#g0",
+          "type": "demand_signal",
+          "delta_c": 1186.047993768836
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0007#g0",
+          "type": "lead_time_change",
+          "delta_c": 37359.53417997621
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0008#g0",
+          "type": "price_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0009#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0010#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0011#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0012#g0",
+          "type": "quality_release",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0013#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0014#g0",
+          "type": "lead_time_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0015#g0",
+          "type": "demand_signal",
+          "delta_c": 2259.7950499003928
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0016#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0017#g0",
+          "type": "capacity_change",
+          "delta_c": 0.0
+        },
+        {
+          "stream": "pilot-023",
+          "delta": "pilot-023-m0018#g0",
+          "type": "supplier_status",
+          "delta_c": 65.70639669051161
+        }
+      ]
+    }
+  ]
+}

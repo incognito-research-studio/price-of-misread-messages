@@ -1,0 +1,55 @@
+# Fresh-stream replication split (WP1), version b2: identical to pilot.yaml except name and seed.
+# The seed was fixed on 2026-10-26 before any stream was generated; generate once, never again
+# (docs/research/replication-protocol.md).
+# Every stream is a pure function of (seed, stream index). b1 settings: git history (9f24237).
+# n_streams amended from 24 to 48 on 2026-10-26, before generation (protocol, "Number of
+# streams"); streams 0-23 are unchanged by it.
+name: confirm
+version: b2
+n_streams: 48
+seed: 2027
+last_message_week: 49       # no message after this week; orders placed later arrive too late
+
+world:
+  start_period: 36          # ISO weeks; periods are weeks
+  end_period: 52
+  calendar_year: 2026
+  n_suppliers: 3
+  plants_per_supplier: 2
+  n_skus: 4
+  skus_per_plant: 2         # assigned at random, every SKU from at least two suppliers
+  min_suppliers_per_sku: 2
+  capacity_ratio: [0.9, 1.3] # plant capacity as a multiple of its share of demand
+  base_demand: [60, 140]    # units per week, per SKU
+  price: [8, 20]            # a base price per SKU ...
+  price_spread: 0.05        # ... and each supplier within 5% of it
+  lead_time_days: [7, 21]
+  lots_per_sku: 1
+  lot_weeks: [2, 3]         # lot size in weeks of the SKU's demand
+  lot_arrival: [39, 47]     # lots reach the distribution centre in these weeks
+  initial_stock_weeks: 3.0   # covers the longest lead time, so the first weeks are not short for every policy
+  holding_cost: 0.5
+  backlog_cost: 25.0
+  moq: 0
+  budget_per_period: null
+
+events:
+  rate: 0.9                 # expected delta events per week
+  weights:
+    capacity_change: 1.0
+    lead_time_change: 1.0
+    quality_hold: 0.8       # releases follow holds; they are not sampled on their own
+    supplier_status: 0.4
+    demand_signal: 1.0
+    price_change: 0.6
+  increase_prob: 0.25
+  revise_prob: 0.15
+  release_prob: 0.8
+  reinstate_prob: 0.7
+  capacity_weeks: [2, 4]    # a capacity change lasts this many weeks
+  cross_week_boundary: true # lead-time changes always move the lead time by whole weeks
+  plain_spikes: true        # key-account spikes are plain one-week increases
+  exclusive_windows: true   # numeric changes to one entity never overlap unless revised
+
+no_change_rate: 0.25        # share of weeks with a message that changes nothing
+distractor_rate: 0.2        # share of messages with an irrelevant trailing sentence

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ollama:qwen2.5:7b-instruct",
+    "client": "ollama",
+    "model": "qwen2.5:7b-instruct",
+    "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+    "server_version": "0.40.3",
+    "temperature": 0,
+    "seed": 0,
+    "num_ctx": 8192,
+    "max_tokens": 1024
+  },
+  {
+    "name": "ollama:llama3.1:8b",
+    "client": "ollama",
+    "model": "llama3.1:8b",
+    "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "server_version": "0.40.3",
+    "temperature": 0,
+    "seed": 0,
+    "num_ctx": 8192,
+    "max_tokens": 1024
+  },
+  {
+    "name": "laya:convaiinnovations/laya/typed-decisions",
+    "client": "laya",
+    "model": "convaiinnovations/laya",
+    "subfolder": "typed-decisions",
+    "revision": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+    "laya_version": "0.4.1"
+  }
+]

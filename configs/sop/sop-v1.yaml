@@ -1,0 +1,7 @@
+# Pre-registered SOP thresholds (version sop-v1). Do not edit after registration;
+# add sop-v2.yaml instead and record the change in CHANGELOG.md.
+version: sop-v1
+capacity_approval_threshold: 0.25       # relative capacity change that needs approval (SOP-002)
+authorised_status_senders:              # sender classes allowed to suspend a supplier (SOP-004)
+  - procurement
+  - supplier_quality
